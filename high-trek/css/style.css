@@ -1,0 +1,651 @@
+body {
+	/*background: #DEDEDE;*/
+	background: #ffffff;
+	font-family: Lato, sans-serif;
+}
+
+em {
+	font-style: italic;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	width: 75%;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+header {
+	background: url(../high-trek-images/hero.jpg) 0 0 no-repeat;
+	background-size: cover;
+	padding: 10px;
+}
+
+.nav {
+	max-height: 45px;
+	padding: 10px 5px 5px 20px;
+	overflow: hidden;
+}
+
+.nav-icon {
+	background: url(../high-trek-images/logo.png) 0 0 no-repeat;
+	background-size: 40px 40px;
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	float: left;
+}
+
+ul {
+	float: right;
+}
+
+li {
+	float: left;
+	list-style: none;	
+}
+
+.about {
+	height: 16px;
+	width: 75px;
+	color: #ffffff;
+	font-family: Lato, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	margin: 13px 5px 13px 0;
+}
+
+.blog {
+	height: 16px;
+	width: 75px;
+	color: #ffffff;
+	font-family: Lato, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	margin: 13px 2px 13px 0;
+}
+
+.search-icon {
+	background: url(../high-trek-images/search.png) 0 0 no-repeat;
+	background-size: 18px 18px;
+	height: 18px;
+	width: 18px;
+	margin: 13px 4px 13px -10px;
+}
+
+.search {
+	height: 16px;
+	width: 75px;
+	color: #ffffff;
+	font-family: Lato, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	margin: 13px auto;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 50px;
+	font-weight: 300;
+}
+
+h2 {
+	text-align: center;
+	font-weight: 100;
+	color: white;
+	font-size: 23px;
+	margin: auto 25px 55px 25px;
+	line-height: 100%;
+	padding: 0 20px;
+}
+
+section {
+	background-color: white;
+	padding: 20px 15px;
+	box-sizing: border-box;
+}
+
+article {
+	padding: 0 15px;
+}
+
+.title-box {
+	background-color: #ffffff;
+	max-height: 500px;
+	padding-top: 5px;
+	box-sizing: border-box
+}
+
+.title {
+	background-color: #fff;
+	max-height: 50px;
+}
+
+h3 {
+	color: #202736;
+	font-size: 27px;
+	font-weight: 300;
+}
+
+.title-box-wrapper {
+	overflow: hidden;
+	padding-top: 5px;
+	max-width: 500px;
+	box-sizing: border-box;	
+}
+
+.title-icon {
+	background: url(../high-trek-images/profile.jpg) 0 0 no-repeat;
+	background-size: 32px 32px;
+	border-radius: 50%;
+	height: 32px;
+	width: 8%;
+	max-width: 32px;
+	float: left;
+	margin-top: 2%;
+}
+
+.name-box {
+	background-color: #ffffff;
+	height: 12px;
+	width: 90%;
+	float: right;
+	margin: 4% auto;
+	color: #534F4C;
+	text-align: left;
+	font-weight: 100;
+	font-size: 13px;
+}
+
+.title-text {
+	background-color: #ffffff;
+	max-height: 800px;
+	clear: both;
+	padding: 15px 0 25px 0;
+	box-sizing: border-box;
+}
+
+.divider {
+	padding: 0 5px;
+}
+
+p {
+	color: #534F4C;
+	line-height: 175%;
+	font-size: 15.5px;
+	font-weight: 300;
+}
+
+/*.image-wrapper {
+	padding: 30px 0 auto;
+	margin: 30px 0 auto;
+	height: 210px;
+	box-sizing: border-box;
+}
+
+.trail-image {
+	background: url(../high-trek-images/trail.jpg) 0 0 no-repeat;
+	background-size: 210px 210px;
+	height: 210px;
+	width: 49%;
+	float: left;
+	margin-right: 2%;	
+}
+
+.fisherman-image {
+	background: url(../high-trek-images/fisherman.jpg) 0 0 no-repeat;
+	background-size: 210px 210px;
+	height: 210px;
+	width: 49%;
+	float: right;
+}*/
+
+
+.image-wrapper {
+	padding: 0px 1% 0px 1%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+	
+.image {
+	background: url(../high-trek-images/trail.jpg), url(../high-trek-images/fisherman.jpg);
+	background-position: left, right;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 49%, 49%;
+	height: 210px;
+	max-width: 210px, 210px;
+	margin-top: 15px, 15px;
+}
+
+.main-text {
+	max-height: 700px;
+	background-color: #ffffff;
+	padding-top: 20px;
+	boder-sizing: border-box;	
+}
+
+.image-text {
+	max-height: 200px;
+	background-color: #ffffff;
+}
+
+.quote {
+	background-color: #ffffff;
+	margin: 45px 0;
+	box-sizing: border: box;
+}
+
+blockquote {
+	color: #8B7E60;
+	font-size: 23px;
+	font-family: Lato, sans-serif;
+	line-height: 130%;
+	border-left: 1px solid #A39E9A;
+	padding-left: 32px;
+	font-weight: 400;
+	font-style: italic;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.bottom-text {
+	max-height: 220px;
+	background-color: #ffffff;
+	border-bottom: 1px solid #A39E9A;
+	padding-bottom: 30px;
+	box-sizing: border-box;	
+}
+
+.profile {
+	max-height: 230px;
+	background-color: #ffffff;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+.profile-image {
+	background: url(../high-trek-images/profile.jpg) 0 0 no-repeat;
+	background-size: 100% 100%;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	margin: 0 auto;
+}
+
+.username {
+	height: 20px;
+	background-color: #ffffff;
+	margin-top: 15px;
+}
+
+h4 {
+	color: #534F4C;
+	font-weight: 300;
+	font-size: 22px;
+	text-align: center;
+}
+
+.slogan {
+	
+	background-color: #ffffff;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.social-media {
+	height: 210px;
+	background-color: #ffffff;
+	margin-top: 35px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #A39E9A;
+	padding-bottom: 35px;
+	box-sizing: border-box;
+}
+
+.facebook {
+	height: 30px;
+	background-color: #3D5C98;
+	margin-bottom: 8px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.instagram {
+	height: 30px;
+	background-color: #407398;
+	margin-bottom: 7px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.twitter {
+	height: 30px;
+	background-color: #59AEEA;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+h5 {
+	color: #ffffff;
+	font-weight: 100;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.articles-wrapper {
+	background-color: #ffffff;
+	padding-top: 20px;
+}
+
+h6 {
+	color: #ffffff;
+	font-size: 55px;
+	font-weight: 700;
+	padding-top: 10px;	
+}
+
+.gardening {
+	background: url(../high-trek-images/bluberries.jpg) 0 0 no-repeat;
+	background-size: cover;
+	height: 180px;
+	padding-top: 30px;
+	padding-left: 40px;
+	margin-top: 7%;
+	margin-bottom: 7%;
+}
+
+.travels {
+	background: url(../high-trek-images/san_francisco.jpg) 0 0 no-repeat;
+	background-size: cover;
+	height: 180px;
+	margin-top: 7%;
+	margin-bottom: 7%;
+	padding-top: 30px;
+	padding-left: 40px;
+}
+
+.woods {
+	background: url(../high-trek-images/woods.jpg) 0 0 no-repeat;
+	background-size: cover;
+	height: 180px;
+	margin-bottom: 5%;
+	padding-top: 30px;
+	padding-left: 40px;
+}
+
+footer {
+	background-color: #373E46;
+	max-height: 200px;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.footer {
+	max-height: 80px;
+	background-color: #373E46;
+}
+
+.footer-icon {
+	background: url(../high-trek-images/logo.png) 0 0 no-repeat;
+	background-size: 44px 44px;
+	height: 44px;
+	width: 44px;
+	margin: 0 auto 15px auto;
+}
+
+.copyright {
+	height: 20px;
+	background-color: #373E46;
+	margin: 0 40px;
+	font-family: Lato, sans-serif;
+	color: #D1CAC2;
+	text-align: center;
+	font-weight: 100;
+	font-size: 15px;
+}
+
+.footer-nav {
+	height: 20px;
+	background-color: #373E46;
+	margin-top: 10px;
+	font-family: Lato, sans-serif;
+	font-size: 15px;
+	font-weight: 100;
+	color: #D1CAC2;
+	text-align: center;
+	word-spacing: 15px;
+}
+
+@media screen and (min-width: 800px) {
+	
+	.wrapper {
+		width: 75%;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	
+	header {
+		max-height: 430px;
+	}
+
+	h1 {
+		font-size: 85px;
+		font-weight: 400;
+		margin-top: 12%;
+		margin-bottom: 2%;
+	}
+
+	h2 {
+		font-size: 40px;
+		font-weight: 300;
+		line-height: 130%;
+	}
+
+	section {
+		padding: 20px 0;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	article {
+		padding: 0 5px 0 5px;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	.main {
+		float: left;
+		width: 60%;
+		overflow: hidden;
+		padding-left: 25px;
+		padding-right: 5px;
+		margin-right: 0 auto;
+	}
+
+	h3{
+		font-size: 35px;
+	}
+
+	.title-box {
+	 	width: 100%;
+	 	max-height: 520px;
+	}
+
+	.title {
+		padding-bottom: 20px;	
+	}
+
+	.title-box-wrapper {
+		width: 100%;
+		padding: 5px 0;
+	}
+
+	.title-text {
+		width: 100%;
+		padding-bottom: 20px;
+		box-sizing: border-box;
+	}
+
+	p {
+	  	width: 100%;
+	}
+
+	.image-wrapper {
+		width: 100%;
+		margin: auto 0;
+	}
+
+	.image {
+		margin: 0 auto;
+	}
+
+	.main-text  {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.image-text {
+		padding: 5px 0;
+		margin: 0 auto;
+	}
+
+	.quote {
+		padding: 10px 0;
+		margin: 10px 0;
+	}
+
+	.bottom-text {
+		border-bottom: 1px solid #ffffff;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	blockquote {
+		line-height: 150%;
+		padding-top: 5px;
+	}
+
+	.aside {
+		float: right;
+		width: 40%;
+		overflow: hidden;
+		padding: 15px 25px 10px 0;
+		margin-left: 0;
+		box-sizing: border-box;	
+	}
+
+	.profile {
+		width: 100%;
+		padding: 5px 0 25px 0;
+		max-height: 260px;
+	} 
+
+	.social-media {
+		width: 100%;
+		max-height: 90px;
+		margin: 10px 0;
+	}
+
+	h5 {
+		font-size: 16px;
+		margin-top:2px;
+	}
+
+	.facebook {
+		width: 33%;
+		float: left;
+		margin-right: 1%;	
+	}
+
+	.instagram {
+		width: 33%;
+		float: left;
+		margin-right: 1%;
+	}
+
+	.twitter {
+		width: 32%;
+		float: right;
+	}
+
+	 .articles-wrapper {
+		width: 100%;
+		padding: 20px 0 10px 0;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	h6 {
+		font-size: 40px;
+	}
+
+	.h6-smaller-font {
+		font-size: 30px;
+	}
+
+	.gardening {
+		width: 100%;
+		height: 145px;
+		padding-left: 30px;
+		padding-top: 15px;
+		margin-bottom: 5px;
+		background-position: center;
+		box-sizing: border-box;
+	}
+
+	.travels {
+		float: left;
+		width: 49%;
+		max-height: 145px;
+		padding: 15px 5px 0 15px;
+		margin: 0 auto;
+		background-size: cover;
+		box-sizing: border-box;
+		overflow: hidden;
+		background-position: center;
+	}
+
+	.woods {
+		float: right;
+		width: 50%;
+		height: 100%;
+		max-height: 145px;
+		background-size: cover;
+		background-position: center;
+		margin: 0 auto;
+		padding: 5px 10px 0 15px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	footer {
+		clear: both;
+		height: 125px;
+	}
+
+	.footer {
+		margin: 0 auto;
+	}
+
+	.footer-icon {
+		float: left;
+		padding: 0 5px 10px 5px;
+	}
+
+	.copyright {
+		float: left;
+		padding-top: 15px;
+	}
+
+	.footer-nav {
+		float: right;
+		padding-top: 5px;
+	}
+}

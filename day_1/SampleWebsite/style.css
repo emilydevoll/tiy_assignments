@@ -1,0 +1,37 @@
+.box {
+	width: 500px;
+	height: 500px;
+	background-image: url('images/kittenz.jpg');
+	background-size: contain;
+	background-repeat: repeat-y;
+	padding: 20px;
+}
+
+.blah {
+	color: blue;
+}
+
+.headerText {
+	background-color: black;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#subheader {
+	font-style: italic;	
+}
+
+.agency-image {
+	width: 500px;
+}
+
+img {
+	width: 100px;
+}
+
+
+p {
+	color: aqua;
+}
