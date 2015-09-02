@@ -1,8 +1,13 @@
 body {
-	/*background: #DEDEDE;*/
 	background: #ffffff;
 	font-family: Lato, sans-serif;
 }
+
+a:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+
 
 em {
 	font-style: italic;
@@ -13,8 +18,6 @@ img {
 }
 
 .wrapper {
-	width: 75%;
-	max-width: 700px;
 	margin: 0 auto;
 }
 
@@ -22,6 +25,9 @@ header {
 	background: url(../high-trek-images/hero.jpg) 0 0 no-repeat;
 	background-size: cover;
 	padding: 10px;
+	height: 300px;
+	max-height: 600px;
+	box-sizing: border-box;
 }
 
 .nav {
@@ -30,9 +36,18 @@ header {
 	overflow: hidden;
 }
 
+.nav a:hover {
+	color: #373E46;
+	text-decoration: underline;
+}
+
+.nav a img:hover {
+	padding: 4px;
+}
+
 .nav-icon {
-	background: url(../high-trek-images/logo.png) 0 0 no-repeat;
-	background-size: 40px 40px;
+	/*background: url(../high-trek-images/logo.png) 0 0 no-repeat;
+	background-size: 40px 40px;*/
 	height: 40px;
 	width: 40px;
 	display: inline-block;
@@ -55,7 +70,8 @@ li {
 	font-family: Lato, sans-serif;
 	font-size: 15px;
 	font-weight: 300;
-	margin: 13px 5px 13px 0;
+	margin-left: 10px;
+	padding: 13px 5px 13px 0;
 }
 
 .blog {
@@ -65,15 +81,16 @@ li {
 	font-family: Lato, sans-serif;
 	font-size: 15px;
 	font-weight: 300;
-	margin: 13px 2px 13px 0;
+	padding: 13px 0;
 }
 
 .search-icon {
 	background: url(../high-trek-images/search.png) 0 0 no-repeat;
-	background-size: 18px 18px;
-	height: 18px;
-	width: 18px;
-	margin: 13px 4px 13px -10px;
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+	margin-right: 5px;
 }
 
 .search {
@@ -83,26 +100,39 @@ li {
 	font-family: Lato, sans-serif;
 	font-size: 15px;
 	font-weight: 300;
-	margin: 13px auto;
+	padding: 13px 0;
 }
 
 h1 {
 	text-align: center;
 	color: white;
-	margin-top: 30px;
-	margin-bottom: 10px;
+	padding-top: 8%;
+	padding-bottom: 1.5%;
+	padding-right: 10%;
+	padding-left: 10%;
 	font-size: 50px;
-	font-weight: 300;
+	font-weight: 400;
+	text-shadow: 1px 1px 8px #373E46;
+}
+
+h2 span {
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 h2 {
 	text-align: center;
 	font-weight: 100;
 	color: white;
-	font-size: 23px;
-	margin: auto 25px 55px 25px;
-	line-height: 100%;
-	padding: 0 20px;
+	font-size: 25px;
+	padding: 0 10%;
+	line-height: 120%;
+	text-shadow: 1px 1px 8px #373E46;
+}
+
+h2 span {
+	padding-right: 33%;
+	padding-left: 33%;
 }
 
 section {
@@ -135,14 +165,15 @@ h3 {
 
 .title-box-wrapper {
 	overflow: hidden;
-	padding-top: 5px;
 	max-width: 500px;
+	max-height: 48px;
 	box-sizing: border-box;	
 }
 
 .title-icon {
 	background: url(../high-trek-images/profile.jpg) 0 0 no-repeat;
-	background-size: 32px 32px;
+	background-size: 36px 36px;
+	background-position: bottom left;
 	border-radius: 50%;
 	height: 32px;
 	width: 8%;
@@ -155,8 +186,8 @@ h3 {
 	background-color: #ffffff;
 	height: 12px;
 	width: 90%;
-	float: right;
-	margin: 4% auto;
+	float: left;
+	padding: 4% 0 4% 10px;
 	color: #534F4C;
 	text-align: left;
 	font-weight: 100;
@@ -167,7 +198,7 @@ h3 {
 	background-color: #ffffff;
 	max-height: 800px;
 	clear: both;
-	padding: 15px 0 25px 0;
+	padding: 15px 0 30px 0;
 	box-sizing: border-box;
 }
 
@@ -182,35 +213,82 @@ p {
 	font-weight: 300;
 }
 
-/*.image-wrapper {
-	padding: 30px 0 auto;
-	margin: 30px 0 auto;
-	height: 210px;
-	box-sizing: border-box;
-}
-
-.trail-image {
-	background: url(../high-trek-images/trail.jpg) 0 0 no-repeat;
-	background-size: 210px 210px;
-	height: 210px;
-	width: 49%;
-	float: left;
-	margin-right: 2%;	
-}
-
-.fisherman-image {
-	background: url(../high-trek-images/fisherman.jpg) 0 0 no-repeat;
-	background-size: 210px 210px;
-	height: 210px;
-	width: 49%;
-	float: right;
-}*/
-
-
 .image-wrapper {
-	padding: 0px 1% 0px 1%;
-	max-width: 100%;
+	height: 100%;
+	max-height: 220px;
+	width: 100%;
+	max-width: 700px;
+	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+.image-wrapper img {
+	height: 210px;
+	width: 210px;
+	margin-right: 2%, 0;
+}
+
+/*ALL OF THE RIDICULOUS CODE I USED TRYING TO POSITION THE IMAGES IN THE CENTER.*/
+
+/*.image-wrapper {
+	padding: 10px 0 45px 0;
+	margin-bottom: -40px;
+	height: 100%;
+	max-height: 280px;
+	width: 100%;
+	max-width: 700px;
 	box-sizing: border-box;
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;*/
+	/*margin-left: auto;
+	margin-right: auto;*/
+
+}
+
+/*.trail-image {
+	background: url(../high-trek-images/trail.jpg) 0 0 no-repeat;
+	background-size: 100%;
+	height: 100%;*/
+	/*max-height: 260px;*/
+	/*min-width: 180px;
+	width: 49%;
+	max-width: 260px;
+	float: left;
+	margin-right: 2%;
+	clear: right;*/
+	/*display: inline-block;*/	
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+
+/*.fisherman-image {
+	background: url(../high-trek-images/fisherman.jpg) 0 0 no-repeat;
+	background-size: 100%;
+	height: 100%;*/
+	/*max-height: 260px;*/
+	/*min-width: 180px;
+	width: 49%;
+	max-width: 260px;*/
+	/*margin-bottom: 20px;*/
+	/*float: left;*/
+	/*display: inline-block;*/
+	/*margin-left: auto;
+	margin-right: auto;
+*/
+}
+
+
+/*.image-wrapper {
+	padding: 0 5%;
+	padding-right: 5%;
+	max-width: 600px;
+	width: 100%;
+	height: 260px;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 	
 .image {
@@ -218,21 +296,29 @@ p {
 	background-position: left, right;
 	background-repeat: no-repeat, no-repeat;
 	background-size: 49%, 49%;
-	height: 210px;
-	max-width: 210px, 210px;
+	height: 99%;
+	max-height: 260px;
+	width: 90%, 90%;
+	max-width: 80px, 100px;
 	margin-top: 15px, 15px;
-}
+	margin-left: 10%, 0;
+	padding-right: 0, 10%;
+	box-sizing: border-box;
+}*/
 
 .main-text {
 	max-height: 700px;
 	background-color: #ffffff;
 	padding-top: 20px;
-	boder-sizing: border-box;	
+	boder-sizing: border-box;
+	clear: both;
+	overflow: hidden;	
 }
 
 .image-text {
 	max-height: 200px;
 	background-color: #ffffff;
+	overflow: hidden;
 }
 
 .quote {
@@ -244,12 +330,10 @@ p {
 blockquote {
 	color: #8B7E60;
 	font-size: 23px;
-	font-family: Lato, sans-serif;
 	line-height: 130%;
 	border-left: 1px solid #A39E9A;
 	padding-left: 32px;
 	font-weight: 400;
-	font-style: italic;
 	margin: 0;
 	box-sizing: border-box;
 }
@@ -271,7 +355,8 @@ blockquote {
 
 .profile-image {
 	background: url(../high-trek-images/profile.jpg) 0 0 no-repeat;
-	background-size: 100% 100%;
+	background-size: 180px 180px;
+	background-position: bottom left;
 	border-radius: 50%;
 	height: 150px;
 	width: 150px;
@@ -308,27 +393,32 @@ h4 {
 	box-sizing: border-box;
 }
 
-.facebook {
-	height: 30px;
-	background-color: #3D5C98;
-	margin-bottom: 8px;
+.social-media a {
 	padding-top: 15px;
 	padding-bottom: 10px;
+	display: block;
+	text-decoration: none;
 }
 
-.instagram {
+.social-media a:hover {
+	background-color: #373E46;
+}
+
+.facebook a {
+	height: 30px;
+	background-color: #3D5C98;
+	margin-bottom: 7px;
+}
+
+.instagram a {
 	height: 30px;
 	background-color: #407398;
 	margin-bottom: 7px;
-	padding-top: 15px;
-	padding-bottom: 10px;
 }
 
-.twitter {
+.twitter a {
 	height: 30px;
 	background-color: #59AEEA;
-	padding-top: 15px;
-	padding-bottom: 10px;
 }
 
 h5 {
@@ -346,7 +436,7 @@ h5 {
 
 h6 {
 	color: #ffffff;
-	font-size: 55px;
+	font-size: 50px;
 	font-weight: 700;
 	padding-top: 10px;	
 }
@@ -354,30 +444,37 @@ h6 {
 .gardening {
 	background: url(../high-trek-images/bluberries.jpg) 0 0 no-repeat;
 	background-size: cover;
-	height: 180px;
-	padding-top: 30px;
-	padding-left: 40px;
+	height: 220px;
+	padding: 30px 180px 0 40px;
+	line-height: 420%;
 	margin-top: 7%;
 	margin-bottom: 7%;
+	box-sizing: border-box;
 }
 
 .travels {
 	background: url(../high-trek-images/san_francisco.jpg) 0 0 no-repeat;
 	background-size: cover;
-	height: 180px;
+	height: 220px;
 	margin-top: 7%;
 	margin-bottom: 7%;
-	padding-top: 30px;
-	padding-left: 40px;
+	padding: 30px 180px 0 40px;
+	line-height: 420%;
+	box-sizing: border-box;
 }
 
 .woods {
 	background: url(../high-trek-images/woods.jpg) 0 0 no-repeat;
 	background-size: cover;
-	height: 180px;
+	height: 220px;
 	margin-bottom: 5%;
-	padding-top: 30px;
-	padding-left: 40px;
+	padding: 30px 140px 0 40px;
+	box-sizing: border-box;
+	line-height: 420%;
+}
+
+.articles-wrapper span {
+	padding-right: 330px;
 }
 
 footer {
@@ -393,11 +490,15 @@ footer {
 }
 
 .footer-icon {
-	background: url(../high-trek-images/logo.png) 0 0 no-repeat;
-	background-size: 44px 44px;
+	/*background: url(../high-trek-images/logo.png) 0 0 no-repeat;
+	background-size: 44px 44px;*/
 	height: 44px;
 	width: 44px;
 	margin: 0 auto 15px auto;
+}
+
+.footer a img:hover {
+	padding: 4px;
 }
 
 .copyright {
@@ -405,10 +506,15 @@ footer {
 	background-color: #373E46;
 	margin: 0 40px;
 	font-family: Lato, sans-serif;
-	color: #D1CAC2;
+	color: #ffffff;
 	text-align: center;
 	font-weight: 100;
 	font-size: 15px;
+}
+
+.footer-nav a:hover {
+	color: #DEDEDE;
+	text-decoration: underline;
 }
 
 .footer-nav {
@@ -426,26 +532,37 @@ footer {
 @media screen and (min-width: 800px) {
 	
 	.wrapper {
-		width: 75%;
-		max-width: 1024px;
+		width: 100%;
+		max-width: 949px;
 		margin: 0 auto;
 	}
 	
 	header {
-		max-height: 430px;
+		height: 430px;
+	}
+
+	.nav img {
+		height: 50px;
+		width: 52px;
+	}
+
+	.nav-icon {
+		height: 60px;
+		width: 60px;
 	}
 
 	h1 {
-		font-size: 85px;
+		font-size: 80px;
 		font-weight: 400;
-		margin-top: 12%;
-		margin-bottom: 2%;
+		padding-top: 10%;
+		padding-bottom: 1.5%;
 	}
 
 	h2 {
 		font-size: 40px;
 		font-weight: 300;
-		line-height: 130%;
+		line-height: 120%;
+		/*padding: 0 ;*/
 	}
 
 	section {
@@ -470,7 +587,8 @@ footer {
 	}
 
 	h3{
-		font-size: 35px;
+		font-size: 38px;
+		padding-right: 6px;
 	}
 
 	.title-box {
@@ -499,6 +617,7 @@ footer {
 
 	.image-wrapper {
 		width: 100%;
+		max-height: 210px;
 		margin: auto 0;
 	}
 
@@ -549,28 +668,32 @@ footer {
 
 	.social-media {
 		width: 100%;
-		max-height: 90px;
+		max-height: 95px;
 		margin: 10px 0;
 	}
 
 	h5 {
 		font-size: 16px;
-		margin-top:2px;
+		padding-bottom: 15px;
+		/*margin-top: 12px;*/
 	}
 
 	.facebook {
+		height: 45px;
 		width: 33%;
 		float: left;
 		margin-right: 1%;	
 	}
 
 	.instagram {
+		height: 55px;
 		width: 33%;
 		float: left;
 		margin-right: 1%;
 	}
 
 	.twitter {
+		height: 55px;
 		width: 32%;
 		float: right;
 	}
@@ -583,46 +706,54 @@ footer {
 	}
 
 	h6 {
-		font-size: 40px;
+		font-size: 38px;
 	}
 
-	.h6-smaller-font {
-		font-size: 30px;
+	.travels h6, .woods h6 {
+		font-size: 28px;
 	}
 
 	.gardening {
 		width: 100%;
-		height: 145px;
-		padding-left: 30px;
-		padding-top: 15px;
+		max-height: 145px;
+		padding: 15px 60px 0 20px;
 		margin-bottom: 5px;
+		background-size: cover;
 		background-position: center;
 		box-sizing: border-box;
+		line-height: 300%;
 	}
 
 	.travels {
 		float: left;
 		width: 49%;
+		height: 100%;
 		max-height: 145px;
-		padding: 15px 5px 0 15px;
+		padding: 20px 5px 0 15px;
 		margin: 0 auto;
 		background-size: cover;
 		box-sizing: border-box;
 		overflow: hidden;
 		background-position: center;
+		line-height: 240%;
 	}
 
 	.woods {
 		float: right;
-		width: 50%;
+		width: 49%;
 		height: 100%;
 		max-height: 145px;
 		background-size: cover;
 		background-position: center;
 		margin: 0 auto;
-		padding: 5px 10px 0 15px;
+		padding: 10px 15px 0 15px;
 		box-sizing: border-box;
 		overflow: hidden;
+		line-height: 220%;
+	}
+
+	.articles-wrapper span {
+		padding-right: 40px;
 	}
 
 	footer {
@@ -647,5 +778,197 @@ footer {
 	.footer-nav {
 		float: right;
 		padding-top: 5px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+
+	.wrapper {
+		max-width: 1050px;
+		margin: 0 auto;
+	}
+
+	header {
+		height: 520px;
+	}
+
+	h1 {
+		font-size: 105px;
+		font-weight: 400;
+		padding-top: 8%;
+		padding-bottom: 2%;
+		/*padding-top: 10%;*/
+		/*padding-bottom: 10px;*/
+	}
+
+	h2 {
+		font-size: 45px;
+		font-weight: 300;
+		line-height: 130%;
+		/*padding: 0 140px;*/
+	}
+
+	.nav {
+		max-height: 70px;
+	}
+
+	.nav img {
+		height: 60px;
+		width: 62px;
+	}
+
+	.nav-icon {
+		height: 100px;
+		width: 100px;
+	}
+
+	.about {
+		font-size: 20px;
+		padding-right: 20px;
+	}
+
+	.blog {
+		font-size: 20px;
+		padding-right: 10px;
+	}
+
+	.search-icon {
+		background-size: 25px 25px;
+		height: 25px;
+		width: 25px;
+	}
+
+	.search {
+		font-size: 20px;
+		padding-right: 20px;
+	}
+
+	.main {
+		width: 65%;
+		padding-left: 25px;
+		padding-top: 20px;
+		box-sizing: border-box;
+	}
+
+	h3 {
+		font-size: 43px;
+		max-height: 60px;
+		/*height: 100%;
+		max-height: 70px;*/
+		/*padding-bottom: 4%;*/
+	}
+
+	.title-box {
+	 	width: 100%;
+	 	max-height: 700px;
+	}
+
+	.title-box-wrapper {
+		max-height: 50px;
+		padding-top: 0;
+		margin-bottom: 1.5%;
+		margin-top: 1%;
+		box-sizing: border-box;
+	}
+
+	.title {
+		padding-bottom: 12%;
+		height: 100%;
+		max-width: 530px;
+		/*padding-right: 5%;*/
+		max-height: 80px;
+		box-sizing: border-box;
+	}
+
+	.title-icon {
+		background-size: 39px 39px;
+		margin-bottom: 0;
+		height: 35px;
+		width: 10%;
+		max-width: 35px;
+		padding-top: 6%;
+		box-sizing: border-box;
+	}
+
+	.name-box {
+		width: 85%;
+		height: 22px;
+		font-size: 14px;
+		float: left;
+		padding-left: 10px;
+		padding-top: 4%;
+		box-sizing: border-box;
+	}
+
+	p {
+		font-size: 18px;
+		max-width: 580px;
+	}
+
+	/*.title-text p, .main-text p, blockquote {
+		width: 90%;
+		padding-left: 6%;
+		box-sizing: border-box;
+	}*/
+
+	.image-wrapper {
+		width: 85%;
+	}
+
+	blockquote {
+		font-size: 25px;
+		/*margin-left: 11%;*/
+		padding-left: 20px;
+		width: 70%;
+	}
+
+	.aside {
+		width: 35%;
+		padding: 7% 9% 0 0;
+		/*padding: 80px 70px 0 20px;*/
+		box-sizing: border-box;
+	}
+
+	.profile {
+		max-height: 280px;
+	}
+
+	.profile-image {
+		background-size: 230px 230px;
+		height: 190px;
+		width: 190px;
+	}
+
+	.articles-wrapper h6 {
+		font-size: 35px;
+		font-weight: 700;
+		line-height: 130%;
+	}
+
+	.articles-wrapper {
+		padding-top: 20px;
+	}
+	
+	.gardening {
+		height: 130px;
+		padding-top: 10px;
+	}
+
+	.travels {
+		height: 130px;
+		width: 100%;
+		padding: 10px 100px 0 20px;
+		margin-bottom: 5px;
+		box-sizing: border-box;
+	}
+
+	.woods {
+		height: 135px;
+		width: 100%;
+		padding: 10px 30px 0 20px;
+	}
+
+	.woods span {
+		padding-right: 90px;
 	}
 }
