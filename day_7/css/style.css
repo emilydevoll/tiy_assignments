@@ -1,0 +1,608 @@
+body {
+  background: #ffffff;
+  font-family: Lato, sans-serif; }
+
+a:link {
+  color: #ffffff;
+  text-decoration: none; }
+
+em {
+  font-style: italic; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  margin: 0 auto; }
+
+header {
+  background: url(../high-trek-images/hero.jpg) 0 0 no-repeat;
+  background-size: cover;
+  padding: 10px;
+  height: 300px;
+  max-height: 600px;
+  box-sizing: border-box; }
+
+.nav {
+  max-height: 50px;
+  padding: 10px 5px 5px 20px;
+  overflow: hidden; }
+  .nav a:hover {
+    color: #373E46;
+    text-decoration: underline; }
+  .nav img:hover {
+    padding: 4px; }
+  .nav .nav-icon {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    float: left; }
+  .nav ul {
+    float: right; }
+    .nav ul li {
+      float: left;
+      list-style: none; }
+    .nav ul .about, .nav ul .blog, .nav ul .search {
+      height: 16px;
+      width: 75px;
+      color: #ffffff;
+      font-family: Lato, sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      padding: 13px 0; }
+    .nav ul .about {
+      padding-right: 5px; }
+    .nav ul .search-icon {
+      background: url(../high-trek-images/search.png) 0 0 no-repeat;
+      background-size: 20px 20px;
+      height: 20px;
+      width: 20px;
+      margin-top: 10px;
+      margin-right: 5px; }
+
+h1 {
+  text-align: center;
+  color: white;
+  padding: 8% 10% 1.5% 10%;
+  font-size: 50px;
+  font-weight: 400;
+  text-shadow: 1px 1px 8px #373E46; }
+
+h2 {
+  text-align: center;
+  font-weight: 300;
+  color: white;
+  font-size: 25px;
+  padding: 0 10%;
+  line-height: 120%;
+  text-shadow: 1px 1px 8px #373E46; }
+  h2 span {
+    padding: 0 33%; }
+
+section {
+  background-color: white;
+  padding: 20px 15px;
+  box-sizing: border-box; }
+
+article {
+  padding: 0 15px; }
+
+p {
+  color: #534F4C;
+  line-height: 175%;
+  font-size: 15.5px;
+  font-weight: 300;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; }
+
+.title-box {
+  background-color: #ffffff;
+  max-height: 500px;
+  padding-top: 5px;
+  box-sizing: border-box; }
+  .title-box .title {
+    background-color: #ffffff;
+    max-height: 50px; }
+    .title-box .title h3 {
+      color: #202736;
+      font-size: 27px;
+      font-weight: 300; }
+  .title-box .title-box-wrapper {
+    overflow: hidden;
+    max-width: 500px;
+    max-height: 48px;
+    box-sizing: border-box; }
+    .title-box .title-box-wrapper .title-icon {
+      background: url(../high-trek-images/profile.jpg) 0 0 no-repeat;
+      background-size: 38px 38px;
+      background-position: bottom left;
+      border-radius: 50%;
+      height: 32px;
+      width: 8%;
+      max-width: 32px;
+      float: left;
+      margin-top: 2%; }
+    .title-box .title-box-wrapper .name-box {
+      background-color: #ffffff;
+      height: 12px;
+      width: 90%;
+      float: right;
+      padding: 4% 0;
+      color: #534F4C;
+      text-align: left;
+      font-weight: 100;
+      font-size: 13px; }
+      .title-box .title-box-wrapper .name-box span {
+        padding: 0 5px; }
+  .title-box .title-text {
+    background-color: #ffffff;
+    max-height: 800px;
+    clear: both;
+    padding: 15px 0 30px 0;
+    box-sizing: border-box; }
+
+.image-wrapper {
+  height: 100%;
+  max-height: 220px;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px 0; }
+  .image-wrapper img {
+    height: 210px;
+    width: 210px;
+    margin-right: 2%, 0; }
+
+.main-text {
+  max-height: 700px;
+  background-color: #ffffff;
+  padding-top: 20px;
+  boder-sizing: border-box; }
+  .main-text .image-text {
+    max-height: 200px; }
+  .main-text .quote {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto; }
+    .main-text .quote blockquote {
+      color: #8B7E60;
+      font-size: 23px;
+      line-height: 130%;
+      border-left: 1px solid #A39E9A;
+      padding-left: 32px;
+      font-weight: 400;
+      margin: 45px 0;
+      box-sizing: border-box; }
+  .main-text .bottom-text {
+    max-height: 230px;
+    border-bottom: 1px solid #A39E9A;
+    padding-bottom: 30px;
+    box-sizing: border-box; }
+
+.profile {
+  max-height: 230px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  box-sizing: border-box;
+  padding-bottom: 15px; }
+  .profile .profile-image {
+    background: url(../high-trek-images/profile.jpg) 0 0 no-repeat;
+    background-size: 180px 180px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    background-position: bottom left; }
+  .profile .username, .profile .slogan {
+    margin: 0 auto;
+    text-align: center; }
+  .profile .username {
+    height: 22px;
+    padding-top: 15px; }
+    .profile .username h4 {
+      color: #534F4C;
+      font-weight: 300;
+      font-size: 22px; }
+  .profile .slogan {
+    height: 18px; }
+
+.social-media {
+  height: 210px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #A39E9A;
+  padding-top: 20px; }
+  .social-media h5 {
+    color: #ffffff;
+    font-weight: 100;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px; }
+  .social-media .facebook, .social-media .instagram, .social-media .twitter {
+    width: 100%;
+    max-width: 600px;
+    padding-bottom: 7px;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    .social-media .facebook a, .social-media .instagram a, .social-media .twitter a {
+      padding-top: 12px;
+      display: block;
+      text-decoration: none;
+      height: 50px;
+      box-sizing: border-box; }
+    .social-media .facebook a:hover, .social-media .instagram a:hover, .social-media .twitter a:hover {
+      background-color: #373E46; }
+  .social-media .facebook a {
+    background-color: #3D5C98; }
+  .social-media .instagram a {
+    background-color: #407398; }
+  .social-media .twitter a {
+    background-color: #59AEEA; }
+
+.articles-wrapper {
+  background-color: #ffffff;
+  padding-top: 40px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 650px; }
+  .articles-wrapper h4 {
+    color: #534F4C;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center; }
+  .articles-wrapper .gardening {
+    background: url(../high-trek-images/bluberries.jpg) 0 0 no-repeat; }
+  .articles-wrapper .travels {
+    background: url(../high-trek-images/san_francisco.jpg) 0 0 no-repeat; }
+  .articles-wrapper .woods {
+    background: url(../high-trek-images/woods.jpg) 0 0 no-repeat; }
+  .articles-wrapper .gardening, .articles-wrapper .travels, .articles-wrapper .woods {
+    background-size: cover;
+    height: 220px;
+    padding: 30px 140px 0 40px;
+    line-height: 420%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    box-sizing: border-box; }
+    .articles-wrapper .gardening h6, .articles-wrapper .travels h6, .articles-wrapper .woods h6 {
+      color: #ffffff;
+      font-size: 50px;
+      font-weight: 700;
+      padding-top: 10px; }
+    .articles-wrapper .gardening span, .articles-wrapper .travels span, .articles-wrapper .woods span {
+      padding-right: 250px; }
+
+footer {
+  background-color: #373E46;
+  max-height: 200px;
+  padding: 40px;
+  box-sizing: border-box; }
+  footer .footer {
+    max-height: 80px;
+    padding-bottom: 15px; }
+    footer .footer a img:hover {
+      padding: 4px; }
+    footer .footer .footer-icon {
+      height: 44px;
+      width: 44px;
+      margin: 0 auto 15px auto; }
+  footer .footer, footer .footer-nav {
+    background-color: #373E46;
+    font-size: 15px;
+    font-weight: 100;
+    color: #ffffff;
+    text-align: center; }
+  footer .footer-nav {
+    height: 20px;
+    word-spacing: 15px; }
+    footer .footer-nav a:hover {
+      color: #DEDEDE;
+      text-decoration: underline; }
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    width: 100%;
+    max-width: 949px;
+    margin: 0 auto; }
+
+  header {
+    height: 430px; }
+    header h1 {
+      font-size: 80px;
+      font-weight: 400;
+      padding-top: 10%;
+      padding-bottom: 1.5%; }
+    header h2 {
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 120%; }
+
+  .nav img {
+    height: 50px;
+    width: 52px; }
+  .nav .nav-icon {
+    height: 60px;
+    width: 60px; }
+
+  section {
+    padding: 20px 0;
+    overflow: hidden;
+    box-sizing: border-box; }
+
+  article {
+    padding: 0 5px 0 5px;
+    overflow: hidden;
+    box-sizing: border-box; }
+
+  .main {
+    float: left;
+    width: 60%;
+    overflow: hidden;
+    padding-left: 35px;
+    padding-right: 10px;
+    margin-right: 0 auto; }
+    .main h3 {
+      font-size: 38px; }
+    .main p {
+      max-width: 555px; }
+
+  .title-box {
+    width: 100%;
+    max-height: 520px; }
+    .title-box .title {
+      padding-bottom: 20px; }
+    .title-box .title-box-wrapper {
+      width: 100%;
+      padding: 5px 0; }
+    .title-box .title-text {
+      padding-bottom: 20px;
+      box-sizing: border-box; }
+
+  .image-wrapper {
+    width: 99.9%;
+    max-height: 210px;
+    margin: auto 0; }
+    .image-wrapper .image {
+      margin: 0 auto; }
+
+  .main-text {
+    width: 100%; }
+    .main-text .image-text {
+      padding: 5px 0; }
+    .main-text .quote {
+      padding: 10px 0;
+      margin: 10px 0; }
+    .main-text blockquote {
+      line-height: 150%;
+      padding-top: 5px; }
+    .main-text .bottom-text {
+      border-bottom: 1px solid #ffffff;
+      overflow: hidden;
+      box-sizing: border-box; }
+
+  .aside {
+    float: right;
+    width: 40%;
+    overflow: hidden;
+    padding: 15px 25px 10px 0;
+    box-sizing: border-box; }
+
+  .profile {
+    width: 100%;
+    padding-bottom: 15px;
+    max-height: 240px;
+    box-sizing: border-box; }
+
+  .social-media {
+    width: 100%;
+    max-height: 55px;
+    padding-bottom: 95px;
+    box-sizing: border-box;
+    font-size: 16px; }
+    .social-media h5 {
+      font-size: 16px; }
+    .social-media .facebook, .social-media .instagram, .social-media .twitter {
+      height: 55px;
+      margin: 0 auto;
+      display: inline-block; }
+      .social-media .facebook a, .social-media .instagram a, .social-media .twitter a {
+        padding-top: 15px; }
+    .social-media .facebook {
+      width: 33%; }
+    .social-media .instagram, .social-media .twitter {
+      width: 32%; }
+
+  .articles-wrapper {
+    width: 100%;
+    padding: 35px 0 10px 0;
+    margin: 0 auto;
+    overflow: hidden; }
+    .articles-wrapper span {
+      padding-right: 40px; }
+    .articles-wrapper .gardening, .articles-wrapper .travels, .articles-wrapper .woods {
+      background-size: cover;
+      background-position: center;
+      box-sizing: border-box;
+      max-height: 145px; }
+    .articles-wrapper .gardening {
+      width: 100%;
+      padding: 15px 60px 0 20px;
+      margin-bottom: 5px;
+      line-height: 300%; }
+      .articles-wrapper .gardening h6 {
+        font-size: 38px; }
+    .articles-wrapper .travels {
+      float: left;
+      width: 49%;
+      height: 100%;
+      padding: 20px 5px 0 15px;
+      margin: 0 auto;
+      line-height: 240%; }
+    .articles-wrapper .woods {
+      float: right;
+      width: 49%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 10px 15px 0 15px;
+      line-height: 220%; }
+    .articles-wrapper .woods h6, .articles-wrapper .travels h6 {
+      font-size: 28px; }
+
+  footer {
+    clear: both;
+    height: 125px; }
+    footer .footer {
+      margin: 0 auto; }
+    footer .footer-icon {
+      float: left;
+      padding: 0 5px 10px 5px; }
+    footer .copyright {
+      float: left;
+      padding-top: 15px; }
+    footer .footer-nav {
+      float: right;
+      padding-top: 5px; } }
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    max-width: 1050px;
+    margin: 0 auto; }
+
+  header {
+    height: 520px; }
+    header h1 {
+      font-size: 105px;
+      font-weight: 400;
+      padding-top: 8%;
+      padding-bottom: 2%; }
+    header h2 {
+      font-size: 45px;
+      font-weight: 300;
+      line-height: 130%; }
+
+  .nav {
+    max-height: 70px; }
+    .nav img {
+      height: 60px;
+      width: 62px; }
+    .nav .nav-icon {
+      height: 100px;
+      width: 100px; }
+    .nav .about, .nav .search {
+      font-size: 20px;
+      padding-right: 20px; }
+    .nav .blog {
+      font-size: 20px;
+      padding-right: 10px; }
+    .nav .search-icon {
+      background-size: 25px 25px;
+      height: 25px;
+      width: 25px; }
+
+  .main {
+    width: 60%;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-top: 20px;
+    box-sizing: border-box; }
+    .main p {
+      font-size: 18px;
+      max-width: 580px; }
+
+  .title-box {
+    width: 100%;
+    max-height: 700px;
+    box-sizing: border-box; }
+    .title-box .title, .title-box .title-box-wrapper, .title-box .title-icon, .title-box .name-box {
+      box-sizing: border-box; }
+    .title-box .title {
+      padding-bottom: 14%;
+      height: 100%;
+      max-width: 530px;
+      max-height: 80px;
+      box-sizing: border-box; }
+      .title-box .title h3 {
+        font-size: 43px; }
+    .title-box .title-box-wrapper {
+      max-height: 50px;
+      padding-top: 0;
+      margin-bottom: 1.5%;
+      margin-top: 1%; }
+      .title-box .title-box-wrapper .title-icon {
+        background-size: 42px 42px;
+        height: 35px;
+        width: 10%;
+        max-width: 35px;
+        padding-top: 6%; }
+      .title-box .title-box-wrapper .name-box {
+        width: 85%;
+        height: 22px;
+        font-size: 14px;
+        float: left;
+        padding-left: 10px;
+        padding-top: 4%; }
+
+  .image-wrapper {
+    width: 95%;
+    margin: auto 0; }
+
+  .main-text blockquote {
+    font-size: 25px;
+    padding-left: 20px;
+    width: 98%;
+    margin-bottom: 10px;
+    box-sizing: border-box; }
+
+  .aside {
+    width: 40%;
+    padding: 2% 5% 0 0;
+    box-sizing: border-box; }
+
+  .profile {
+    max-height: 320px;
+    box-sizing: border-box; }
+    .profile .username {
+      height: 30px;
+      padding-bottom: 3px; }
+      .profile .username h4 {
+        font-size: 30px; }
+    .profile .slogan {
+      height: 25px;
+      padding-bottom: 20px; }
+      .profile .slogan p {
+        font-size: 18px; }
+    .profile .profile-image {
+      background-size: 250px 250px;
+      height: 210px;
+      width: 210px; }
+
+  .social-media {
+    padding-bottom: 110px;
+    padding-top: 0; }
+
+  .articles-wrapper {
+    padding-top: 40px;
+    max-height: 700px; }
+    .articles-wrapper h4 {
+      font-size: 30px; }
+    .articles-wrapper .gardening, .articles-wrapper .travels, .articles-wrapper .woods {
+      max-height: 180px;
+      padding-top: 15px;
+      padding-left: 25px;
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 3%;
+      line-height: 370%; }
+      .articles-wrapper .gardening h6, .articles-wrapper .travels h6, .articles-wrapper .woods h6 {
+        font-size: 48px;
+        font-weight: 700; }
+    .articles-wrapper .travels {
+      padding-right: 100px; }
+    .articles-wrapper .woods {
+      padding-right: 30px;
+      overflow: hidden; }
+      .articles-wrapper .woods span {
+        padding-right: 90px; } }
+
+/*# sourceMappingURL=style.css.map */
