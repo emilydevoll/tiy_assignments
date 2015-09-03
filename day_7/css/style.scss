@@ -220,6 +220,7 @@ p {
 		max-width: 600px;
 		width: 100%;
 		margin: 0 auto;
+		max-height: 80px;
 
 		blockquote {
 			color: #8B7E60;
@@ -228,8 +229,8 @@ p {
 			border-left: 1px solid #A39E9A;
 			padding-left: 32px;
 			font-weight: 400;
-			margin: 45px 0;
-			box-sizing: border-box;
+			// margin: 45px 0;
+			// box-sizing: border-box;
 		}
 	}
 
@@ -474,10 +475,6 @@ footer {
 		padding-right: 10px;
 		margin-right: 0 auto;
 
-		h3{
-			font-size: 38px;
-		}
-
 		p {
 	  		max-width: 555px;
 		}
@@ -489,6 +486,11 @@ footer {
 	
 		.title {
 			padding-bottom: 20px;	
+
+			h3{
+			font-size: 38px;
+			padding-right: 6px;
+			}
 		}
 
 		.title-box-wrapper {
@@ -527,6 +529,7 @@ footer {
 		blockquote {
 			line-height: 150%;
 			padding-top: 5px;
+			max-width: 600px
 		}
 
 		.bottom-text {
@@ -733,20 +736,19 @@ footer {
 	 	max-height: 700px;
 	 	box-sizing: border-box;
 
-	 	.title, .title-box-wrapper, .title-icon, .name-box {
-			box-sizing: border-box;
-		}
-
 	 	.title {
 			padding-bottom: 14%;
 			height: 100%;
 			max-width: 530px;
 			max-height: 80px;
-			box-sizing: border-box;
-
+			
 			h3 {
 				font-size: 43px;
 			}
+		}
+
+		.title, .title-box-wrapper, .title-icon, .name-box {
+			box-sizing: border-box;
 		}
 
 		.title-box-wrapper {
