@@ -42,23 +42,23 @@ header {
     .nav ul li {
       float: left;
       list-style: none; }
-    .nav ul .about, .nav ul .blog, .nav ul .search {
-      height: 16px;
-      width: 75px;
-      color: #ffffff;
-      font-family: Lato, sans-serif;
-      font-size: 15px;
-      font-weight: 300;
-      padding: 13px 0; }
-    .nav ul .about {
-      padding-right: 5px; }
-    .nav ul .search-icon {
-      background: url(../high-trek-images/search.png) 0 0 no-repeat;
-      background-size: 20px 20px;
-      height: 20px;
-      width: 20px;
-      margin-top: 10px;
-      margin-right: 5px; }
+  .nav .about, .nav .blog, .nav .search {
+    height: 16px;
+    width: 75px;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 13px 0; }
+  .nav .about {
+    padding-right: 5px; }
+  .nav .search-icon {
+    background: url(../high-trek-images/search.png) 0 0 no-repeat;
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-right: 5px; }
 
 h1 {
   text-align: center;
@@ -132,14 +132,14 @@ p {
       color: #534F4C;
       text-align: left;
       font-weight: 100;
-      font-size: 13px; }
+      font-size: 12px; }
       .title-box .title-box-wrapper .name-box span {
         padding: 0 5px; }
   .title-box .title-text {
     background-color: #ffffff;
     max-height: 800px;
     clear: both;
-    padding: 15px 0 30px 0;
+    padding: 15px 0 20px 0;
     box-sizing: border-box; }
 
 .image-wrapper {
@@ -152,42 +152,48 @@ p {
   overflow: hidden;
   padding: 20px 0; }
   .image-wrapper img {
-    height: 210px;
-    width: 210px;
-    margin-right: 2%, 0; }
+    max-height: 210px;
+    max-width: 210px;
+    height: 100%;
+    width: 49%;
+    padding-right: 1%;
+    margin: 0 auto;
+    box-sizing: border-box; }
 
 .main-text {
   max-height: 700px;
   background-color: #ffffff;
-  padding-top: 20px;
+  padding: 10px 0 20px 0;
   boder-sizing: border-box; }
   .main-text .image-text {
     max-height: 200px; }
   .main-text .quote {
     max-width: 600px;
+    margin: 0 auto;
     width: 100%;
-    margin: 0 auto; }
+    padding: 10px;
+    max-height: 80px; }
     .main-text .quote blockquote {
       color: #8B7E60;
       font-size: 23px;
       line-height: 130%;
       border-left: 1px solid #A39E9A;
-      padding-left: 32px;
+      padding-left: 30px;
       font-weight: 400;
-      margin: 45px 0;
+      margin-top: 10px;
+      max-width: 540px;
       box-sizing: border-box; }
   .main-text .bottom-text {
     max-height: 230px;
     border-bottom: 1px solid #A39E9A;
-    padding-bottom: 30px;
+    padding: 30px 0;
     box-sizing: border-box; }
 
 .profile {
   max-height: 230px;
   background-color: #ffffff;
-  padding-top: 10px;
-  box-sizing: border-box;
-  padding-bottom: 15px; }
+  padding: 10px 0 15px 0;
+  box-sizing: border-box; }
   .profile .profile-image {
     background: url(../high-trek-images/profile.jpg) 0 0 no-repeat;
     background-size: 180px 180px;
@@ -232,14 +238,14 @@ p {
       text-decoration: none;
       height: 50px;
       box-sizing: border-box; }
-    .social-media .facebook a:hover, .social-media .instagram a:hover, .social-media .twitter a:hover {
-      background-color: #373E46; }
   .social-media .facebook a {
     background-color: #3D5C98; }
   .social-media .instagram a {
     background-color: #407398; }
   .social-media .twitter a {
     background-color: #59AEEA; }
+  .social-media .facebook:hover, .social-media .instagram:hover, .social-media .twitter:hover {
+    opacity: 0.6; }
 
 .articles-wrapper {
   background-color: #ffffff;
@@ -273,6 +279,8 @@ p {
       padding-top: 10px; }
     .articles-wrapper .gardening span, .articles-wrapper .travels span, .articles-wrapper .woods span {
       padding-right: 250px; }
+  .articles-wrapper .gardening:hover, .articles-wrapper .travels:hover, .articles-wrapper .woods:hover {
+    opacity: 0.6; }
 
 footer {
   background-color: #373E46;
@@ -301,7 +309,7 @@ footer {
       color: #DEDEDE;
       text-decoration: underline; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .wrapper {
     width: 100%;
     max-width: 949px;
@@ -312,12 +320,16 @@ footer {
     header h1 {
       font-size: 80px;
       font-weight: 400;
-      padding-top: 10%;
-      padding-bottom: 1.5%; }
+      padding: 10% 0 1.5% 0; }
     header h2 {
-      font-size: 40px;
+      font-size: 38px;
       font-weight: 300;
-      line-height: 120%; }
+      line-height: 120%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 8%; }
+      header h2 span {
+        padding: 0 9%; }
 
   .nav img {
     height: 50px;
@@ -340,11 +352,8 @@ footer {
     float: left;
     width: 60%;
     overflow: hidden;
-    padding-left: 35px;
-    padding-right: 10px;
+    padding: 20px 10px 0 35px;
     margin-right: 0 auto; }
-    .main h3 {
-      font-size: 38px; }
     .main p {
       max-width: 555px; }
 
@@ -353,6 +362,10 @@ footer {
     max-height: 520px; }
     .title-box .title {
       padding-bottom: 20px; }
+      .title-box .title h3 {
+        font-size: 34px;
+        max-width: 450px;
+        line-heigh: 150%; }
     .title-box .title-box-wrapper {
       width: 100%;
       padding: 5px 0; }
@@ -361,22 +374,26 @@ footer {
       box-sizing: border-box; }
 
   .image-wrapper {
-    width: 99.9%;
+    width: 95%;
+    height: 100%;
     max-height: 210px;
     margin: auto 0; }
-    .image-wrapper .image {
-      margin: 0 auto; }
+    .image-wrapper img {
+      margin: 0 auto;
+      height: 100%;
+      width: 49%;
+      max-width: 210px; }
 
   .main-text {
     width: 100%; }
     .main-text .image-text {
       padding: 5px 0; }
     .main-text .quote {
-      padding: 10px 0;
-      margin: 10px 0; }
+      padding: 15px 0 20px 0; }
     .main-text blockquote {
       line-height: 150%;
-      padding-top: 5px; }
+      padding: 5px 0;
+      max-width: 600px; }
     .main-text .bottom-text {
       border-bottom: 1px solid #ffffff;
       overflow: hidden;
@@ -460,13 +477,13 @@ footer {
       padding: 0 5px 10px 5px; }
     footer .copyright {
       float: left;
-      padding-top: 15px; }
+      padding: 15px 0 0 20px; }
     footer .footer-nav {
       float: right;
       padding-top: 5px; } }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 950px) {
   .wrapper {
-    max-width: 1050px;
+    max-width: 100%;
     margin: 0 auto; }
 
   header {
@@ -474,12 +491,12 @@ footer {
     header h1 {
       font-size: 105px;
       font-weight: 400;
-      padding-top: 8%;
-      padding-bottom: 2%; }
+      padding: 8% 0 2% 0; }
     header h2 {
       font-size: 45px;
       font-weight: 300;
-      line-height: 130%; }
+      line-height: 130%;
+      max-width: 700px; }
 
   .nav {
     max-height: 70px; }
@@ -502,33 +519,30 @@ footer {
 
   .main {
     width: 60%;
-    padding-left: 5%;
-    padding-right: 3%;
-    padding-top: 20px;
+    padding: 20px 3% 0 3%;
     box-sizing: border-box; }
     .main p {
       font-size: 18px;
-      max-width: 580px; }
+      max-width: 650px; }
 
   .title-box {
     width: 100%;
     max-height: 700px;
-    box-sizing: border-box; }
-    .title-box .title, .title-box .title-box-wrapper, .title-box .title-icon, .title-box .name-box {
-      box-sizing: border-box; }
+    box-sizing: border-box;
+    max-width: 650px;
+    margin: 0 auto; }
     .title-box .title {
       padding-bottom: 14%;
       height: 100%;
-      max-width: 530px;
-      max-height: 80px;
-      box-sizing: border-box; }
+      max-width: 500px;
+      max-height: 80px; }
       .title-box .title h3 {
-        font-size: 43px; }
+        font-size: 43px;
+        max-width: 500px; }
     .title-box .title-box-wrapper {
-      max-height: 50px;
-      padding-top: 0;
-      margin-bottom: 1.5%;
-      margin-top: 1%; }
+      max-width: 550px;
+      max-height: 60px;
+      margin-bottom: 1.5%; }
       .title-box .title-box-wrapper .title-icon {
         background-size: 42px 42px;
         height: 35px;
@@ -541,18 +555,27 @@ footer {
         font-size: 14px;
         float: left;
         padding-left: 10px;
-        padding-top: 4%; }
+        padding-top: 4%;
+        font-size: 15px; }
+    .title-box .title, .title-box .title-box-wrapper, .title-box .title-icon, .title-box .name-box {
+      box-sizing: border-box; }
 
   .image-wrapper {
     width: 95%;
-    margin: auto 0; }
+    margin: 0 auto;
+    max-height: 260px; }
+    .image-wrapper img {
+      max-height: 280px;
+      max-width: 280px; }
 
-  .main-text blockquote {
-    font-size: 25px;
-    padding-left: 20px;
-    width: 98%;
-    margin-bottom: 10px;
-    box-sizing: border-box; }
+  .main-text .quote {
+    padding-bottom: 30px; }
+    .main-text .quote blockquote {
+      font-size: 25px;
+      padding-left: 20px;
+      width: 100%;
+      max-width: 530px;
+      box-sizing: border-box; }
 
   .aside {
     width: 40%;
@@ -583,7 +606,8 @@ footer {
 
   .articles-wrapper {
     padding-top: 40px;
-    max-height: 700px; }
+    max-height: 700px;
+    margin: 0 auto; }
     .articles-wrapper h4 {
       font-size: 30px; }
     .articles-wrapper .gardening, .articles-wrapper .travels, .articles-wrapper .woods {
@@ -593,16 +617,17 @@ footer {
       box-sizing: border-box;
       width: 100%;
       margin-bottom: 3%;
-      line-height: 370%; }
+      line-height: 370%;
+      max-width: 450px; }
       .articles-wrapper .gardening h6, .articles-wrapper .travels h6, .articles-wrapper .woods h6 {
         font-size: 48px;
         font-weight: 700; }
     .articles-wrapper .travels {
       padding-right: 100px; }
     .articles-wrapper .woods {
-      padding-right: 30px;
+      padding-right: 15%;
       overflow: hidden; }
       .articles-wrapper .woods span {
-        padding-right: 90px; } }
+        padding-right: 35%; } }
 
 /*# sourceMappingURL=style.css.map */
