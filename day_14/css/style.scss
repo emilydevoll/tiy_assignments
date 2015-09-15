@@ -1,0 +1,479 @@
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+
+emp {
+	font-style: italic;
+}
+
+
+body {
+	background: url(../images/wood3.jpg);
+	background-repeat: x-repeat;
+	background-size: contain;
+	width: 100%;
+	// max-width: 650px;
+	// height: 1370px;
+}
+
+.small-nav {
+
+	.menu-icon {
+		width: 42px;
+		height: 40px;
+		float: right;
+		padding: 18px 18px 0 0;
+
+		img {
+			width: 100%;
+			height: 100%;
+			
+		}
+	}
+
+	.container {
+		margin: 0 auto;
+		width: 75%;
+		height: 280px;
+		padding-top: 20px;
+		box-sizing: border-box;
+
+		.logo {
+			background: url(../images/logo.png) 0 0 no-repeat;
+			background-size: contain;
+			height: 325px;
+			width: 350px;
+			margin: 0 auto;
+
+			h1 {
+				@include logo;
+				font-size: 62px;
+				text-align: center;
+				padding-top: 21%;
+				margin: 0 auto;
+			}
+
+			h2 {
+				@include logo;
+				font-size: 23px;
+				text-align: center;
+				margin: 0 auto;
+				padding-top: 2%;
+			}
+		}
+	}
+}
+
+.large-nav {
+	display: none;
+}
+
+.large-menu {
+	display: none;
+}
+
+.appetizers {
+	width: 92%;
+	background-color: $primary-background-color;
+	border: $primary-border-color;
+	// height: 100%;
+	// max-height: 990px;
+	margin: 0 auto;
+	border-radius: 5px;
+
+	h1 {
+		font-weight: 900;
+		font-size: 65px;
+		color: $primary-font-color;
+		font-family: $primary-font-family;
+		text-align: center;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+
+	.menu-bar {
+		width: 95%;
+		max-width: 370px;
+		margin: 0 auto;
+		background: url(../images/menu_bar.png) 0 0 no-repeat;
+		background-size: 375px 30px;
+		height: 25px;
+		padding-bottom: 20px;
+
+		h2 {
+			font-family: $primary-font-family;
+			color: black;	
+			padding: 4px 0 0 10px;
+			font-weight: 400;
+			font-size: 20px;
+		}
+	}
+
+	.container {
+
+		.saps-roll {
+
+			.box {
+				@include small-box;
+				// height: 132px;
+			}
+
+			h3 {
+				@include h3;
+			}
+
+			h4 {
+				@include h4;
+			}
+
+			h5 {
+				@include h5;
+			}
+
+			p {
+				@include p;
+			}
+		}
+
+		.spring-rolls {
+
+			.box {
+				@include small-box;
+				// height: 112px;
+				
+				h3 {
+					@include h3;
+				}
+
+				h4 {
+					@include h4;
+				}
+
+				h5 {
+					@include h5;
+				}
+
+				p {
+					@include p;
+				}
+			}	
+		}
+
+		.kao-tung {
+
+			.box {
+				@include small-box;
+				// height: 110px;
+				
+				h3 {
+					@include h3;
+				}
+
+				h4 {
+					@include h4;
+				}
+
+				h5 {
+					@include h5;
+				}
+
+				p {
+					@include p;
+				}
+			}			
+		}
+
+		.thai-chicken-wings {
+
+			.box {
+				@include small-box;
+				// height: 95px;
+				
+				h3 {
+					@include h3;
+				}
+
+				h4 {
+					@include h4;
+				}
+
+				h5 {
+					@include h5;
+				}
+
+				p {
+					@include p;
+				}
+			}
+		}
+
+		.tod-mun-pla-grai {
+
+			.box {
+				@include small-box;
+				// height: 132px;
+				
+				h3 {
+					@include h3;
+				}
+
+				h4 {
+					@include h4;
+				}
+
+				h5 {
+					@include h5;
+				}
+
+				p {
+					@include p;
+				}	
+			}		
+		}
+
+		.tod-mun-chicken {
+
+			.box {
+				@include small-box;
+				// height: 132px;
+				
+				h3 {
+					@include h3;
+				}
+
+				h4 {
+					@include h4;
+				}
+
+				h5 {
+					@include h5;
+				}
+
+				p {
+					@include p;
+				}
+			}			
+		}
+	}
+}
+
+.salads {
+	display: none;
+}
+
+.guay-teaw-hang {
+	display: none;
+}
+
+.noodle-soup {
+	display: none;
+}
+
+.desserts {
+	display: none;
+}
+
+.drinks {
+	display: none;
+}
+
+.two {
+	display: none;
+}
+
+footer {
+
+	// height: 130px;
+	width: 25%;
+	margin: 0 auto;
+
+
+	.elephant{
+
+		margin: 0 auto;
+
+		img {
+			padding: 15px 0 5px 0;
+			margin: 0 auto;
+			height: 100px;
+			width: 120px;
+		}
+	}
+}
+
+@media screen and (min-width: 700px) {
+
+	body {
+		max-width: 900px;
+	}
+
+	nav {
+
+		.menu-icon {
+			width: 62px;
+			height: 60px;
+			float: right;
+			padding: 25px 25px 0 0;
+
+			img {
+				width: 100%;
+				height: 100%;	
+			}
+		}
+	
+		.container {
+			// height: 350px;
+			padding: 15px 0 10px 0;
+			width: 80%;
+		
+			.logo {
+				height: 420px;
+				width: 450px;
+
+				h1 {
+					font-size: 82px;
+				}
+
+				h2 {
+					font-size: 30px;
+				}
+			}		
+		}
+	}
+
+	.appetizers {
+
+		h1 {
+			font-size: 75px;
+		}
+
+		.container{
+			@include large-box;
+			height: 70%;
+		
+			.left {
+				float: left;
+				width: 46%;
+				padding-top: 10px;
+				height: 100%;
+
+				.saps-roll {
+
+					.box {
+						@include no-box;
+					}
+				}
+
+				.spring-rolls {
+
+					.box {
+						@include no-box;
+					}
+				}
+
+				.kao-tung {
+
+					.box {
+						@include no-box;
+					}
+				}
+			}
+
+			.right {
+				float: right;
+				width: 54%;
+				padding-top: 10px;
+				height: 100%;
+
+				.thai-chicken-wings {
+
+					.box {
+						@include no-box;
+					}
+				}
+
+				.tod-mun-pla-grai {
+
+					.box {
+						@include no-box;
+					}
+				}
+
+				.tod-mun-chicken {
+
+					.box {
+						@include no-box;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 900px) {
+
+	body{
+		max-width: 100%;
+	}
+
+	.small-nav {
+		display: none;
+	}
+
+	.large-nav {
+		display: block;
+
+		.container {
+			margin: 0 auto;
+			width: 100%;
+			height: 400px;
+			padding: 20px 0;
+			box-sizing: border-box;
+
+			.large-logo {
+				background: url(../images/large_logo.png) 0 0 no-repeat;
+				background-size: contain;
+				background-position: center;
+				height: 100%;
+				width: 90%;
+				// height: 300px;
+				// width: 100%;
+				// max-height: 1000px;
+				// width: 1200px;
+				// min-height: 500px;
+				// min-width: 800px;
+				margin: 0 auto;
+
+				h1 {
+					@include logo;
+					font-size: 110px;
+					text-align: center;
+					padding-top: 8%;
+					margin: 0 auto;
+				}
+
+				h2 {
+					@include logo;
+					font-size: 38px;
+					text-align: center;
+					margin: 0 auto;
+					padding-top: 2%;
+				}
+
+				h3 {
+					font-family: $logo-font-family;
+					color: $primary-font-color;
+					font-size: 30px;
+					text-align: left;
+					margin-top: -8%;
+				}
+			}
+		}
+	}
+
+	.small-menu {
+		display: none;
+	}
+
+
+}
