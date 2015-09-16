@@ -1,0 +1,175 @@
+body {
+	background-color: #1A090D;
+	3D003D
+	330033
+}
+
+h1 {
+	color: #393D3F;
+	font-family:Copperplate;
+	font-size:60px;
+	line-height:50%;
+}
+
+img {
+	width:300px;
+	margin:0 auto;
+}
+
+.wrapper {
+	width: 1100px;
+	margin:0 auto;
+}
+
+.me {
+	width:500px;
+	height:500px;
+	margin:0 auto;
+	text-align:center;
+	background-color:#7B886F;
+	font-family:Optima;
+	color:#393D3F;
+	font-size:20px;
+	border:5px solid #393D3F;
+	line-height:200%;
+}
+
+.me img {
+	width:50%;
+	border:10px solid #393D3F;
+}
+
+
+h2 {
+	font-family:Copperplate;
+	color:#393D3F;
+	font-size:40px;
+}
+
+h2 {
+	font-family:Copperplate;
+	color:#393D3F;
+	font-size:40px;
+}
+
+.family {
+	width:40%;
+	overflow:hidden;
+	float:left;
+	text-align:center;
+	background-color:#7B886F;
+	border:5px solid #393D3F;
+	padding:10px;
+	box-sizing:border-box;
+}
+
+.parents {
+	width:50%;
+	float:left;
+	text-align:left;
+	font-family:Optima;
+	font-size:15px;
+	color: #393D3F;
+	padding:10px;
+	box-sizing:border-box;
+	line-height:100%;
+}
+
+.parents img {
+	width:100%;
+	border:5px solid #393D3F;
+}
+
+.chad {
+	width:50%;
+	float:left;
+	text-align:left;
+	padding:10px;
+	box-sizing:border-box;
+	font-family:Optima;
+	font-size:15px;
+	color: #393D3F;
+	line-height:100%;
+}
+
+.chad img {
+	width:100%;
+	border:5px solid #393D3F;	
+}
+
+.school {
+	width:20%;
+	height:86.5%;
+	float:left;
+	text-align:center;
+	background-color:#7B886F;
+	padding:10px;
+	box-sizing:border-box;
+	border:5px solid #393D3F;
+	line-height:200%;
+}
+
+.osu {
+	text-align:left;
+	font-family:Optima;
+	font-size:15px;
+	color: #393D3F;
+	padding:10px;
+	box-sizing:border-box;
+	line-height:100%;
+}
+
+.school img {
+	width:100%;
+	height:34.5%;
+	border:5px solid #393D3F;
+	padding:10px;
+	box-sizing:border-box;
+	margin-top:21px;
+}
+
+
+
+.aboutme {
+	width:40%;
+	float:left;
+	text-align:center;
+	background-color:#7B886F;
+	border:5px solid #393D3F;
+	padding:10px;
+	box-sizing:border-box;
+}
+
+.atticus {
+	width:50%;
+	float:left;
+	text-align:left;
+	font-family:Optima;
+	font-size:15px;
+	color: #393D3F;
+	padding:10px;
+	box-sizing:border-box;
+	line-height:95%;
+}
+
+.atticus img {
+	width:100%;
+	border:5px solid #393D3F;
+}
+
+.art {
+	width:50%;
+	float:left;
+	text-align:left;
+	padding:10px;
+	box-sizing:border-box;
+	font-family:Optima;
+	font-size:15px;
+	color: #393D3F;
+	line-height:90%;
+}
+
+.art img {
+	width:100%;
+	border:5px solid #393D3F;
+}
