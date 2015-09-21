@@ -1,194 +1,256 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,300);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+body {
+  line-height: 1; }
 
+ol, ul {
+  list-style: none; }
 
-/* basic elements */
-html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
+blockquote, q {
+  quotes: none; }
 
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
 
-/* specific divs */
-.page-wrapper { 
-	background: url(zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
+body {
+  min-width: 500px; }
+  body h1 {
+    font-family: Montserrat Subrayada, sans-serif;
+    font-weight: 700;
+    color: #EC5A49;
+    font-size: 38px;
+    text-align: center; }
+  body h2 {
+    font-family: Montserrat Subrayada, sans-serif;
+    font-weight: 700;
+    color: #257FBB;
+    font-size: 25px;
+    text-align: center; }
+  body h3 {
+    font-family: Montserrat Subrayada, sans-serif;
+    font-weight: 400;
+    color: #257FBB;
+    font-size: 20px;
+    padding: 10px 0; }
+  body p {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    color: black; }
 
-header h1 { 
-	background: transparent url(h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
+.intro {
+  background: url(../images/header_background_small.png) 0 0 no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  .intro h1 {
+    padding-top: 22%;
+    padding-bottom: 2%;
+    font-size: 39px; }
+  .intro h2 {
+    padding-bottom: 7%;
+    max-width: 320px;
+    font-size: 30px;
+    margin: 0 auto; }
+  .intro .summary {
+    background-color: #afaeaf;
+    border: 3px solid black;
+    width: 65%;
+    margin: 0 auto;
+    padding: 1% 0; }
+    .intro .summary p {
+      margin: 0 auto;
+      padding: 1% 5%;
+      font-size: 14px;
+      line-height: 120%; }
+    .intro .summary a {
+      text-decoration: none;
+      color: #f3da4b; }
+  .intro .preamble {
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 83.15%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-left: 7.7%;
+    padding: 1.5% 4% 1.5% 2.1%;
+    border-top: 3px solid black; }
+    .intro .preamble h3 {
+      text-align: center;
+      font-size: 25px;
+      padding: 3% 0 1% 0;
+      width: 90%;
+      margin-left: 5%;
+      color: white;
+      font-weight: 400;
+      border-top: 3px solid black;
+      border-left: 3px solid black;
+      border-right: 3px solid black;
+      background-color: #EC5A49; }
+    .intro .preamble p {
+      width: 84%;
+      margin-left: 5%;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 1% 3%;
+      line-height: 130%;
+      color: black;
+      background-color: #EC5A49;
+      border-left: 3px solid black;
+      border-right: 3px solid black; }
+    .intro .preamble :nth-child(4) {
+      border-bottom: 3px solid black;
+      padding-bottom: 3%; }
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
+.main-supporting {
+  background: url(../images/main_background_small2.png) 0 0 no-repeat;
+  background-position: center top;
+  background-size: cover;
+  margin-top: -12%;
+  padding-top: 24%; }
+  .main-supporting h3 {
+    text-align: center;
+    color: white;
+    padding: 3% 0 2% 0;
+    font-size: 25px; }
+  .main-supporting p {
+    font-size: 15px;
+    line-height: 135%;
+    padding: 1% 3%;
+    font-weight: 400;
+    color: white; }
+  .main-supporting a {
+    text-decoration: none;
+    color: #f3da4b; }
+  .main-supporting .explanation {
+    width: 72%;
+    margin-left: 13.8%;
+    border: 3px solid black;
+    padding: 1% 0 2% 0;
+    background-color: #257FBB;
+    background-color: #257FBB; }
+  .main-supporting .participation {
+    width: 72%;
+    margin-left: 13.8%;
+    border: 3px solid black;
+    padding: 1% 0 2% 0;
+    background-color: #257FBB;
+    margin-top: 2%; }
+  .main-supporting .benefits {
+    width: 72%;
+    margin-left: 13.8%;
+    border: 3px solid black;
+    padding: 1% 0 2% 0;
+    background-color: #257FBB;
+    background-color: #257FBB;
+    margin-top: 2%; }
+  .main-supporting .requirements {
+    width: 72%;
+    margin-left: 13.8%;
+    border: 3px solid black;
+    padding: 1% 0 2% 0;
+    background-color: #257FBB;
+    margin-top: 2%; }
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
-}
+@media screen and (min-width: 650px) {
+  .intro {
+    background: url(../images/header_background_large2.png) 0 0 no-repeat;
+    background-size: cover; }
+    .intro h1 {
+      font-size: 45px;
+      padding-top: 17%;
+      padding-bottom: 2%; }
+    .intro h2 {
+      padding-bottom: 6%;
+      font-size: 32px;
+      max-width: 400px; }
+    .intro .summary {
+      width: 55%;
+      border: 4px solid black; }
+      .intro .summary p {
+        font-size: 14px;
+        width: 94%;
+        padding: 2% 3%; }
+    .intro .preamble {
+      width: 85%;
+      margin-left: 3.5%;
+      border: none;
+      margin-top: 1%; }
+      .intro .preamble h3 {
+        width: 94.7%;
+        font-size: 30px;
+        border-top: 4px solid black;
+        border-left: 4px solid black;
+        border-right: 4px solid black; }
+      .intro .preamble p {
+        width: 88.7%;
+        font-size: 15px;
+        border-left: 4px solid black;
+        border-right: 4px solid black; }
 
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	}
+  .main-supporting {
+    background: url(../images/main_background_medium2.png) 0 0 no-repeat;
+    background-size: cover;
+    margin-top: -8%;
+    padding-top: 18%; }
+    .main-supporting h3 {
+      font-size: 30px; }
+    .main-supporting .explanation {
+      border: 4px solid black; }
+    .main-supporting .participation {
+      border: 4px solid black; }
+    .main-supporting .benefits {
+      border: 4px solid black; }
+    .main-supporting .requirements {
+      border: 4px solid black; } }
+@media screen and (min-width: 900px) {
+  .intro {
+    height: 100%;
+    background: url(../images/header_background_large4.png) 0 0 no-repeat;
+    background-size: cover; }
+    .intro h1 {
+      font-size: 65px;
+      padding-top: 18%; }
+    .intro h2 {
+      font-size: 50px;
+      max-width: 600px; }
+    .intro .summary {
+      border: 5px solid black;
+      width: 50%; }
+      .intro .summary p {
+        font-size: 17px; } }
 
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
-
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
-
-.sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-
-
-.sidebar ul {
-	margin: 0;
-	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
-
-
-.extra1 {
-	background: transparent url(cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+/*# sourceMappingURL=style.css.map */
