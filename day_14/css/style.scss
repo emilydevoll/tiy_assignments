@@ -6,11 +6,15 @@ emp {
 	font-style: italic;
 }
 
+strong {
+	font-style: bold;
+}
+
 
 body {
 	background: url(../images/wood3.jpg);
 	background-repeat: x-repeat;
-	background-size: contain;
+	background-size: 100%;
 	width: 100%;
 	// max-width: 650px;
 	// height: 1370px;
@@ -72,14 +76,26 @@ body {
 	display: none;
 }
 
-.appetizers {
+.wrapper {
 	width: 92%;
 	background-color: $primary-background-color;
 	border: $primary-border-color;
-	// height: 100%;
-	// max-height: 990px;
 	margin: 0 auto;
 	border-radius: 5px;
+	overflow: hidden;
+
+.appetizers {
+	// width: 92%;
+	// background-color: $primary-background-color;
+	// border: $primary-border-color;
+	// height: 100%;
+	// max-height: 990px;
+	// margin: 0 auto;
+	// border-radius: 5px;
+
+	h6 {
+		display: none;
+	}
 
 	h1 {
 		font-weight: 900;
@@ -269,22 +285,28 @@ body {
 	display: none;
 }
 
-.desserts {
+.stir-fried-noodles {
 	display: none;
 }
 
-.drinks {
+.dessert {
 	display: none;
 }
+
+// .drinks {
+// 	display: none;
+// }
 
 .two {
 	display: none;
 }
 
+}
+
 footer {
 
 	// height: 130px;
-	width: 25%;
+	width: 20%;
 	margin: 0 auto;
 
 
@@ -341,68 +363,72 @@ footer {
 		}
 	}
 
-	.appetizers {
+	.wrapper {
 
-		h1 {
-			font-size: 75px;
-		}
+		.appetizers {
 
-		.container{
-			@include large-box;
-			height: 70%;
-		
-			.left {
-				float: left;
-				width: 46%;
-				padding-top: 10px;
-				height: 100%;
-
-				.saps-roll {
-
-					.box {
-						@include no-box;
-					}
-				}
-
-				.spring-rolls {
-
-					.box {
-						@include no-box;
-					}
-				}
-
-				.kao-tung {
-
-					.box {
-						@include no-box;
-					}
-				}
+			h1 {
+				font-size: 75px;
 			}
 
-			.right {
-				float: right;
-				width: 54%;
-				padding-top: 10px;
-				height: 100%;
+			.container{
+				@include large-box;
+				// height: 70%;
+				overflow: hidden;
+			
+				.left {
+					float: left;
+					width: 46%;
+					padding-top: 10px;
+					// height: 100%;
 
-				.thai-chicken-wings {
+					.saps-roll {
 
-					.box {
-						@include no-box;
+						.box {
+							@include no-box;
+						}
+					}
+
+					.spring-rolls {
+
+						.box {
+							@include no-box;
+						}
+					}
+
+					.kao-tung {
+
+						.box {
+							@include no-box;
+						}
 					}
 				}
 
-				.tod-mun-pla-grai {
+				.right {
+					float: right;
+					width: 54%;
+					padding-top: 10px;
+					// height: 100%;
 
-					.box {
-						@include no-box;
+					.thai-chicken-wings {
+
+						.box {
+							@include no-box;
+						}
 					}
-				}
 
-				.tod-mun-chicken {
+					.tod-mun-pla-grai {
 
-					.box {
-						@include no-box;
+						.box {
+							@include no-box;
+						}
+					}
+
+					.tod-mun-chicken {
+
+						.box {
+							@include no-box;
+						}
 					}
 				}
 			}
@@ -434,7 +460,7 @@ footer {
 				background: url(../images/large_logo.png) 0 0 no-repeat;
 				background-size: contain;
 				background-position: center;
-				height: 100%;
+				height: 80%;
 				width: 90%;
 				// height: 300px;
 				// width: 100%;
@@ -446,26 +472,50 @@ footer {
 
 				h1 {
 					@include logo;
-					font-size: 110px;
+					font-size: 90px;
 					text-align: center;
-					padding-top: 8%;
+					padding-top: 7%;
 					margin: 0 auto;
 				}
 
 				h2 {
 					@include logo;
-					font-size: 38px;
+					font-size: 32px;
 					text-align: center;
 					margin: 0 auto;
-					padding-top: 2%;
+					padding-top: 1%;
 				}
 
 				h3 {
+
 					font-family: $logo-font-family;
 					color: $primary-font-color;
 					font-size: 30px;
 					text-align: left;
-					margin-top: -8%;
+					margin-top: -7.3%;
+					margin-left: 22%;
+				}
+
+				h4 {
+					font-family: $logo-font-family;
+					color: $primary-font-color;
+					font-size: 30px;
+					float: right;
+					margin-top: -2.5%;
+					margin-right: 21%;
+				}
+
+				a {
+					text-decoration: none;
+				}
+
+				a:hover {
+
+					h3, h4 {
+						// color: black;
+						color: $secondary-font-color;
+					}
+					
 				}
 			}
 		}
@@ -475,5 +525,630 @@ footer {
 		display: none;
 	}
 
+	.large-menu {
+		display: inline-block;
+		background: url(../images/food1.png) 0 0 no-repeat;
+		// margin: 0 auto;
+		background-size: 100%;
+		width: 75%;
 
+		height: 170px;
+		margin: 0 auto;
+		margin-left: 13%;
+		margin-top: -5%;
+		border: $primary-border-color;
+
+		h1 {
+			text-align: center;
+			font-size: 110px;
+			color: $secondary-background-color;
+			font-family: $primary-font-family;
+			font-weight: 900;
+			padding-top: 2%;
+			text-shadow: 3px 3px 2px $primary-font-color;
+		}
+	}
+
+	.wrapper {
+		width: 95%;
+		overflow: hidden;
+		margin-top: 2%;
+		// height: 100%;
+
+
+		.one {
+			float: left;
+			width: 50%;
+
+			.appetizers {
+
+				h6 {
+					display: inline-block;
+					@include h6;
+					margin: 0 auto;
+					text-align: center;
+					padding-left: 30%;
+				}
+
+				.container {
+
+					.left {
+
+						.saps-roll {
+							@include large-text;
+						}
+
+						.spring-rolls {
+							@include large-text;
+						}
+
+						.kao-tung {
+							@include large-text;
+						}
+					}
+
+					.right {
+
+						.thai-chicken-wings {
+							@include large-text;
+						}
+
+						.tod-mun-pla-grai {
+							@include large-text;
+						}
+
+						.tod-mun-chicken {
+							@include large-text;
+						}
+					}
+				}
+
+			}
+
+			.salads {
+				display: inline-block;
+
+				h6 {
+					@include h6;
+				}
+
+				.container {
+					@include large-box;
+					overflow: hidden;
+
+					.left {
+						float: left;
+						width: 48%;
+						padding-right: 3%;
+
+						.saps-salad {
+							@include menu-items;
+						}
+
+						.yum-nuer {
+							@include menu-items;
+						}
+					}
+
+					.right {
+						float: right;
+						width: 49%;
+
+						.num-tok {
+							@include menu-items;
+						}
+
+						.som-tum {
+							@include menu-items;
+						}
+					}
+				}
+			}
+
+			.guay-teaw-hang {
+				display: inline-block;
+
+				h6 {
+					@include h6;
+				}
+
+
+				.container {
+					@include large-box;
+					// height: 500px;
+					overflow: hidden;
+
+					.left {
+						float: left;
+						width: 52%;
+						padding-right: 3%;
+
+						.sen-lek-hang {
+							@include menu-items;
+						}
+
+						.yen-ta-fo-hang-seafood {
+							@include menu-items;
+						}
+
+						.yen-ta-fo-hang-tofu {
+							@include menu-items;
+						}
+					}
+
+					.right {
+						float: right;
+						width: 45%;
+
+						.yum-guay-teaw {
+							@include menu-items;
+						}
+
+						.noodle-lord {
+							@include menu-items;
+						}
+					}
+				}
+			}
+
+			.noodle-soup {
+				display: inline-block;
+
+				h6 {
+					@include h6;
+				}
+
+				.container {
+					@include large-box;
+					overflow: hidden;
+
+					.left {
+						float: left;
+						width: 45%;
+						padding-right: 3%;
+
+						.guay-teaw-nuer-sod {
+							@include menu-items;
+						}
+
+						.guay-teaw-nuer-puey {
+							@include menu-items;
+						}
+
+						.guay-teaw-meat-ball {
+							@include menu-items;
+						}
+
+						.guay-teaw-nuer-combo {
+							@include menu-items;
+						}
+
+						.guay-teaw-moo {
+							@include menu-items;
+						}
+
+						.guay-teaw-gai-toon {
+							@include menu-items;
+						}
+
+						.guay-teaw-ped-toon {
+							@include menu-items;
+						}
+
+						.guay-teaw-tom-yum {
+							@include menu-items;
+						}
+					}
+
+					.right {
+						float: right;
+						width: 52%;
+
+						.guay-teaw-tom-yum-ta-lay {
+							@include menu-items;
+						}
+
+						.macaroni-soup {
+							@include menu-items;
+						}
+
+						.udon-tom-yum {
+							@include menu-items;
+						}
+
+						.yen-ta-fo-seafood {
+							@include menu-items;
+						}
+
+						.yen-ta-fo-tofu {
+							@include menu-items;
+						}
+
+						.guay-teaw-tom-yum-moo {
+							@include menu-items;
+						}
+
+						.tom-khlong {
+							@include menu-items;
+						}
+					}
+				}
+			}
+
+			.stir-fried-noodles {
+				display: inline-block;
+
+				h6 {
+					@include h6;
+				}
+
+				.container {
+					@include large-box;
+					overflow: hidden;
+
+					.left {
+						float: left;
+						width: 48%;
+						padding-right: 3%;
+
+						.pad-thai {
+							@include menu-items;
+						}
+
+						.pad-thai-shrimp {
+							@include menu-items;
+						}
+
+						.pad-sea-ew {
+							@include menu-items;
+						}
+
+						.pad-sea-ew-shrimp {
+							@include menu-items;
+						}
+
+						.pad-spaghetti-kee-mao {
+							@include menu-items;
+						}
+
+						.pad-spaghetti-kee-mao-seafood {
+							@include menu-items;
+						}
+					}
+
+					.right {
+						float: right;
+						width: 49%;
+
+						.lard-na {
+							@include menu-items;
+							padding: 1%;
+						}
+
+						.lard-na-seafood {
+							@include menu-items;
+						}
+
+						.pad-macaroni {
+							@include menu-items;
+						}
+
+						.pad-macaroni-shrimp {
+							@include menu-items;
+						}
+
+						.guay-teaw-kua-gai {
+							@include menu-items;
+						}
+					}
+				}
+			}
+
+
+			.dessert {
+				display: inline-block;
+
+				h6 {
+					@include h6;
+				}
+
+				.container {
+					@include large-box;
+					overflow: hidden;
+					
+					.left {
+						float: left;
+						width: 57%;
+						padding-right: 1%;
+
+						.sweet-sticky-rice-mango {
+							@include menu-items;
+						}
+
+						.sweet-sticky-rice-thai-custard {
+							@include menu-items;
+						}
+					}
+
+					.right {
+						float: right;
+						width: 42%;
+
+						.kao-tom-mud {
+							@include menu-items;
+						}
+
+						.ka-nom-tuay {
+							@include menu-items;
+						}
+					}
+				}
+			}
+
+		}
+
+		.two {
+			float: right;
+			width: 50%;
+			display: inline-block;
+
+			.special-noodles-and-rice {
+
+				h6 {
+					@include h6;
+				}
+
+				.container {
+					@include large-box;
+					overflow: hidden;
+
+					.left {
+						float: left;
+						width: 49%;
+						padding-right: 3%;
+
+						.guay-teaw-nuer-sub {
+							@include menu-items;
+						}
+
+						.pad-ga-tiam-prik-thai {
+							@include menu-items;
+						}
+
+						.garee-curry {
+							@include menu-items;
+						}
+
+						.keow-wan-curry {
+							@include menu-items;
+						}
+
+						.gang-kua-supparod {
+							@include menu-items;
+						}
+
+						.fried-rice {
+							@include menu-items;
+						}
+
+						.pineapple-fried-rice {
+							@include menu-items;
+						}
+
+						.pad-ped-ga-prao {
+							@include menu-items;
+						}
+
+						.thai-pepper-fried-rice {
+							@include menu-items;
+						}
+
+						.tom-yum {
+							@include menu-items;
+						}
+
+						.tom-kha {
+							@include menu-items;
+						}
+
+						.panang-curry {
+							@include menu-items;
+						}
+
+						.masman-curry {
+							@include menu-items;
+						}
+
+						.vegetable-stir-fried {
+							@include menu-items;
+						}
+
+						.kao-soi {
+							@include menu-items;
+						}
+
+						.pad-cha-catfish {
+							@include menu-items;
+						}
+
+						.chu-chee-salmon {
+							@include menu-items;
+						}
+
+						.pla-rard-prik {
+							@include menu-items;
+						}	
+					}
+
+					.right {
+						float: right;
+						width: 48%;
+
+						.rice-soup {
+							@include menu-items;
+						}
+
+						.tom-kem-salmon {
+							@include menu-items;
+						}
+
+						.prink-khing-catfish {
+							@include menu-items;
+						}
+
+						.pad-prik-khing {
+							@include menu-items;
+						}
+
+						.kai-nam {
+							@include menu-items;
+						}
+
+						.pad-prik-pao {
+							@include menu-items;
+						}
+
+						.gang-jeud {
+							@include menu-items;
+						}
+
+						.gang-pa {
+							@include menu-items;
+						}
+
+						.keow-wan-luk-chin-pla {
+							@include menu-items;
+						}
+
+						.saps-sweet-and-sour-stir-fried {
+							@include menu-items;
+						}
+
+						.pad-ma-kur-yaow {
+							@include menu-items;
+						}
+
+						.napa-soup {
+							@include menu-items;
+						}
+
+						.amazing-green-beans {
+							@include menu-items;
+						}
+
+						.pad-ped-nor-mai {
+							@include menu-items;
+						}
+
+						.sweet-hot-bamboo-shoot {
+							@include menu-items;
+						}
+
+						.stir-fried-bean-sprout {
+							@include menu-items;
+						}
+
+						.kai-jeaw {
+							@include menu-items;
+						}
+
+						.pud-khing {
+							@include menu-items;
+						}
+
+						.pla-nueng-manow {
+							@include menu-items;
+						}
+
+						.pla-jian {
+							@include menu-items;
+						}
+					}
+				}
+			}
+
+			.drinks {
+
+				h6 {
+					@include h6;
+				}
+
+				.container {
+					@include large-box;
+					overflow: hidden;
+
+					.left {
+						float: left;
+						width: 48.5%;
+						padding-right: 3%;
+
+						.coffee {
+							@include drink-items;
+						}
+
+						.jasmine-tea {
+							clear: both;
+							@include drink-items;
+						}
+
+						.pot-green-tea {
+							clear: both;
+							@include drink-items;
+						}
+
+						.pot-ginger-tea {
+							clear: both;
+							@include drink-items;
+						}
+
+						.ice-tea {
+							clear: both;
+							@include drink-items;
+						}
+
+						.soda {
+							clear: both;
+							@include drink-items;
+						}
+					}
+
+					.right {
+						float: right;
+						width: 48.5%;
+
+						.sweet-leaf-tea {
+							@include drink-items;
+						}
+
+						.thai-tea {
+							clear: both;
+							@include drink-items;
+						}
+
+						.thai-coffee {
+							clear: both;
+							@include drink-items;
+						}
+
+						.coconut-juice {
+							clear: both;
+							@include drink-items;
+						}
+
+						.vitamilk {
+							clear: both;
+							@include drink-items;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	footer {
+		clear: both;
+		margin: 0 auto;
+		width: 15%;
+	}
 }
