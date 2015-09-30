@@ -34,7 +34,7 @@ I conducted numerous interviews with current and new users to investigate what t
 * ***Hard to navigate.***  
    Navigation icons are hard to see/use. Overall site is hard to navigate through due to poor hierarchy and content overload.
 
-####Opportunites:
+####Opportunities:
 * ***Utilizing all the features.***  
    The site already offers so many great features that other competitor sites don't offer. If utilized better, the site is capable of standing apart from the rest and ultimately increase the turn around for potential members over its competitors.
 * ***Selling books through the actual site.***  
