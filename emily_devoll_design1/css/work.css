@@ -1,0 +1,104 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #F3EADE;
+  width: 100%; }
+
+header {
+  margin: 13px auto 0 auto;
+  background-color: #432E63;
+  border-bottom: 4px solid #5F607C;
+  border-top: 4px solid #5F607C;
+  height: 60px;
+  width: 100%; }
+  header .container .title {
+    display: none; }
+  header .container .image-wrapper {
+    float: left;
+    margin-top: -15px;
+    padding-left: 15px; }
+    header .container .image-wrapper .logo-image {
+      background: url(../images/logo2.png) 0 0 no-repeat;
+      background-size: 80%;
+      background-position: center;
+      border-radius: 50%;
+      height: 105px;
+      width: 105px;
+      background-color: #f3eade;
+      border: 4px solid #90C5A9; }
+  header .container nav {
+    float: right;
+    padding: 20px 10px 20px 0; }
+    header .container nav a {
+      vertical-align: center;
+      font-family: "Oswald", sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 20px 0;
+      text-decoration: none;
+      color: #F3EADE;
+      padding: 5px; }
+    header .container nav a:last-child {
+      padding-right: 10px; }
+    header .container nav a:hover, header .container nav a:link {
+      color: #90C5A9; }
+
+footer .image-wrapper {
+  width: 78px;
+  margin: -43px auto 0 auto; }
+  footer .image-wrapper img {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    background-color: #f3eade;
+    border: 3px solid #90C5A9;
+    padding: 8px;
+    margin: 0 auto;
+    box-sizing: border-box; }
+
+/*# sourceMappingURL=work.css.map */

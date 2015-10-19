@@ -1,0 +1,419 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #F3EADE;
+  width: 100%; }
+
+header {
+  margin: 13px auto 0 auto;
+  background-color: #432E63;
+  border-bottom: 4px solid #5F607C;
+  border-top: 4px solid #5F607C;
+  height: 60px;
+  width: 100%; }
+  header .container .title {
+    display: none; }
+  header .container .image-wrapper {
+    float: left;
+    margin-top: -15px;
+    padding-left: 15px; }
+    header .container .image-wrapper .logo-image {
+      background: url(../images/logo2.png) 0 0 no-repeat;
+      background-size: 80%;
+      background-position: center;
+      border-radius: 50%;
+      height: 105px;
+      width: 105px;
+      background-color: #f3eade;
+      border: 4px solid #90C5A9; }
+  header .container nav {
+    float: right;
+    padding: 20px 10px 20px 0; }
+    header .container nav a {
+      vertical-align: center;
+      font-family: "Oswald", sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 20px 0;
+      text-decoration: none;
+      color: #F3EADE;
+      padding: 5px; }
+    header .container nav a:last-child {
+      padding-right: 10px; }
+    header .container nav a:hover, header .container nav a:link {
+      color: #90C5A9; }
+
+.work {
+  padding: 50px 1%;
+  margin: 0 auto;
+  width: 98%; }
+  .work .kindness-project, .work .css-zen-garden, .work .goodreads, .work .saps, .work .high-trek {
+    clear: both;
+    margin: 0 auto;
+    max-width: 600px;
+    box-sizing: border-box; }
+    .work .kindness-project .container, .work .css-zen-garden .container, .work .goodreads .container, .work .saps .container, .work .high-trek .container {
+      border-bottom: 1px dotted #7E9E99;
+      box-sizing: border-box;
+      overflow: hidden;
+      padding: 20px 0 20px 0; }
+      .work .kindness-project .container .image-wrapper, .work .css-zen-garden .container .image-wrapper, .work .goodreads .container .image-wrapper, .work .saps .container .image-wrapper, .work .high-trek .container .image-wrapper {
+        height: 150px;
+        width: 150px;
+        border: 4px solid #5F607C;
+        margin-right: 10px;
+        margin-left: 10px;
+        overflow: hidden; }
+        .work .kindness-project .container .image-wrapper img, .work .css-zen-garden .container .image-wrapper img, .work .goodreads .container .image-wrapper img, .work .saps .container .image-wrapper img, .work .high-trek .container .image-wrapper img {
+          height: 100%;
+          width: 100%;
+          -webkit-filter: blur(5px);
+          margin-right: 20px; }
+      .work .kindness-project .container h1, .work .css-zen-garden .container h1, .work .goodreads .container h1, .work .saps .container h1, .work .high-trek .container h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 32px;
+        text-transform: uppercase;
+        color: #90C5A9;
+        padding-top: 20px;
+        padding-bottom: 5px; }
+      .work .kindness-project .container h2, .work .css-zen-garden .container h2, .work .goodreads .container h2, .work .saps .container h2, .work .high-trek .container h2 {
+        font-family: "Droid Serif", serif;
+        font-size: 20px;
+        color: #432E63;
+        font-style: italic; }
+      .work .kindness-project .container a, .work .css-zen-garden .container a, .work .goodreads .container a, .work .saps .container a, .work .high-trek .container a {
+        text-decoration: none; }
+    .work .kindness-project .container a:hover .image-wrapper, .work .css-zen-garden .container a:hover .image-wrapper, .work .goodreads .container a:hover .image-wrapper, .work .saps .container a:hover .image-wrapper, .work .high-trek .container a:hover .image-wrapper {
+      border: 4px solid #432E63; }
+    .work .kindness-project .container a:hover img, .work .css-zen-garden .container a:hover img, .work .goodreads .container a:hover img, .work .saps .container a:hover img, .work .high-trek .container a:hover img {
+      -webkit-filter: grayscale(0%); }
+  .work .kindness-project .container .image-wrapper, .work .goodreads .container .image-wrapper, .work .high-trek .container .image-wrapper {
+    float: left; }
+  .work .kindness-project .container h1, .work .kindness-project .container h2, .work .goodreads .container h1, .work .goodreads .container h2, .work .high-trek .container h1, .work .high-trek .container h2 {
+    text-align: left;
+    padding-right: 50px; }
+  .work .css-zen-garden .image-wrapper, .work .saps .image-wrapper {
+    float: right; }
+  .work .css-zen-garden h1, .work .css-zen-garden h2, .work .saps h1, .work .saps h2 {
+    text-align: right; }
+  .work .high-trek .container {
+    border-bottom: none; }
+
+.info {
+  width: 98%;
+  background-color: #432E63;
+  border-top: 4px solid #5F607C;
+  padding: 1%; }
+  .info .about-me h1 {
+    font-family: "Oswald", sans-serif;
+    color: #90C5A9;
+    font-size: 25px;
+    padding: 20px 10px 10px 10px; }
+  .info .about-me p {
+    font-family: "Droid Serif", serif;
+    font-size: 14px;
+    color: #F3EADE;
+    padding: 10px;
+    line-height: 160%;
+    width: 90%; }
+  .info .contact * {
+    margin: 0;
+    padding: 0; }
+  .info .contact body {
+    font-size: 62.5%;
+    font-family: "Droid Serif", serif, serif;
+    background: url(images/page-bg.jpg); }
+  .info .contact .clear {
+    clear: both; }
+  .info .contact fieldset {
+    border: none; }
+  .info .contact #page-wrap {
+    margin: 0 auto; }
+  .info .contact #formLeft {
+    width: 90%; }
+  .info .contact #formLeft input {
+    height: 40px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: none;
+    background-color: #F3EADE;
+    border-radius: 5px;
+    margin: 5px 0 0 10px;
+    font-size: 15px; }
+  .info .contact #formLeft .input-bg {
+    background: url(images/form-sm-bg.jpg) bottom left no-repeat transparent;
+    height: 45px;
+    margin-bottom: 10px;
+    position: relative; }
+  .info .contact #formLeft .active {
+    background: url(images/form-sm-bg.jpg) top left no-repeat transparent; }
+  .info .contact #formRight {
+    width: 90%; }
+  .info .contact #formRight textarea {
+    width: 100%;
+    height: 150px;
+    display: block;
+    background-color: #F3EADE;
+    border-radius: 5px;
+    margin: 5px 0 0 10px;
+    font-family: "Droid Serif", serif;
+    font-size: 15px; }
+  .info .contact #formRight .active {
+    background: url(../images/goodreads.png) top left no-repeat transparent; }
+  .info .contact label {
+    display: block;
+    font-family: "Droid Serif", serif;
+    font-size: 15px;
+    color: #FFA54B;
+    padding-top: 5px;
+    text-indent: 10px; }
+  .info .contact label.error {
+    position: absolute;
+    top: -16px;
+    right: 49px;
+    padding: 3px;
+    color: #da3939;
+    font-size: 1.0em;
+    text-align: right;
+    font-style: italic;
+    font-weight: normal; }
+  .info .contact input.submit {
+    style: none;
+    background-color: #EF484F;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    margin: 0 0 50px 10px;
+    color: #F3EADE;
+    border-radius: 5px; }
+  .info .contact h1 {
+    font-family: "Oswald", sans-serif;
+    color: #90C5A9;
+    font-size: 25px;
+    padding: 20px 10px 20px 10px; }
+
+footer .image-wrapper {
+  width: 78px;
+  margin: -43px auto 0 auto; }
+  footer .image-wrapper img {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    background-color: #f3eade;
+    border: 3px solid #90C5A9;
+    padding: 8px;
+    margin: 0 auto;
+    box-sizing: border-box; }
+
+@media screen and (min-width: 654px) {
+  header {
+    height: 70px;
+    margin-top: 13px;
+    width: 100%;
+    z-index: 99;
+    position: fixed; }
+    header .container .title {
+      display: inline-block;
+      font-family: "Oswald", sans-serif;
+      float: left;
+      vertical-align: middle;
+      width: 41%; }
+      header .container .title h1 {
+        text-align: right;
+        padding: 22px 30px 10px 20px;
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #90C5A9; }
+      header .container .title h2 {
+        display: none; }
+    header .container .image-wrapper {
+      float: left;
+      margin: 0 auto;
+      margin: -15px auto 0 auto;
+      padding-left: 0; }
+      header .container .image-wrapper .logo-image {
+        height: 120px;
+        width: 120px; }
+    header .container nav {
+      float: left;
+      margin: auto auto;
+      padding-top: 26px;
+      padding-left: 20px; }
+
+  .work {
+    padding: 150px 20px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box; }
+    .work .kindness-project .container, .work .css-zen-garden .container, .work .goodreads .container, .work .saps .container, .work .high-trek .container {
+      border: none; }
+      .work .kindness-project .container .image-wrapper, .work .css-zen-garden .container .image-wrapper, .work .goodreads .container .image-wrapper, .work .saps .container .image-wrapper, .work .high-trek .container .image-wrapper {
+        height: 220px;
+        width: 220px;
+        border: 6px solid #5F607C; }
+      .work .kindness-project .container h1, .work .css-zen-garden .container h1, .work .goodreads .container h1, .work .saps .container h1, .work .high-trek .container h1 {
+        margin: 0 auto;
+        font-size: 30px;
+        padding-top: 0; }
+      .work .kindness-project .container h2, .work .css-zen-garden .container h2, .work .goodreads .container h2, .work .saps .container h2, .work .high-trek .container h2 {
+        margin: 0 auto;
+        font-size: 18px; }
+    .work .kindness-project, .work .goodreads, .work .high-trek {
+      clear: none; }
+      .work .kindness-project .container a:hover .image-wrapper, .work .goodreads .container a:hover .image-wrapper, .work .high-trek .container a:hover .image-wrapper {
+        border: 6px solid #432E63; }
+      .work .kindness-project .container, .work .goodreads .container, .work .high-trek .container {
+        float: left;
+        padding-bottom: 20px; }
+        .work .kindness-project .container .image-wrapper, .work .goodreads .container .image-wrapper, .work .high-trek .container .image-wrapper {
+          float: left; }
+        .work .kindness-project .container h1, .work .kindness-project .container h2, .work .goodreads .container h1, .work .goodreads .container h2, .work .high-trek .container h1, .work .high-trek .container h2 {
+          margin: 0 auto;
+          width: 100%;
+          text-align: center;
+          clear: both;
+          float: left;
+          padding-right: 0; }
+    .work .css-zen-garden, .work .saps {
+      clear: none; }
+      .work .css-zen-garden .container a:hover .image-wrapper, .work .saps .container a:hover .image-wrapper {
+        border: 6px solid #432E63; }
+      .work .css-zen-garden .container, .work .saps .container {
+        float: right; }
+        .work .css-zen-garden .container .image-wrapper, .work .saps .container .image-wrapper {
+          float: right; }
+      .work .css-zen-garden h1, .work .css-zen-garden h2, .work .saps h1, .work .saps h2 {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        clear: both;
+        float: right; }
+    .work .high-trek .container {
+      padding-bottom: 80px; }
+
+  .info {
+    margin-top: 40px;
+    clear: both;
+    margin: 0 auto; }
+    .info .about-me {
+      margin: 0 auto;
+      width: 80%; }
+      .info .about-me p {
+        font-size: 14px; }
+    .info .contact {
+      width: 80%;
+      margin: 0 auto; } }
+@media screen and (min-width: 817px) {
+  header {
+    height: 95px; }
+    header .container {
+      max-width: 1125px;
+      margin: 0 auto; }
+      header .container .title h1 {
+        padding-right: 50px;
+        padding-top: 15px; }
+      header .container .title h2 {
+        text-align: right;
+        display: block;
+        font-size: 25px;
+        color: #F3EADE;
+        text-transform: uppercase;
+        padding-right: 50px; }
+      header .container .image-wrapper {
+        margin-left: 15px; }
+        header .container .image-wrapper .logo-image {
+          height: 160px;
+          width: 160px; }
+      header .container nav {
+        padding-top: 35px;
+        font-size: 10px;
+        margin-left: 15px; }
+        header .container nav a {
+          font-size: 22px;
+          padding: 10px 0 10px 15px; }
+
+  .work {
+    padding-top: 180px;
+    width: 100%; }
+    .work .kindness-project .container, .work .css-zen-garden .container, .work .goodreads .container, .work .saps .container, .work .high-trek .container {
+      border: none; }
+      .work .kindness-project .container .image-wrapper, .work .css-zen-garden .container .image-wrapper, .work .goodreads .container .image-wrapper, .work .saps .container .image-wrapper, .work .high-trek .container .image-wrapper {
+        height: 250px;
+        width: 250px;
+        border: 7px solid #5F607C; }
+      .work .kindness-project .container h1, .work .css-zen-garden .container h1, .work .goodreads .container h1, .work .saps .container h1, .work .high-trek .container h1 {
+        margin: 0 auto;
+        font-size: 30px;
+        padding-top: 0; }
+      .work .kindness-project .container h2, .work .css-zen-garden .container h2, .work .goodreads .container h2, .work .saps .container h2, .work .high-trek .container h2 {
+        margin: 0 auto;
+        font-size: 18px; }
+    .work .kindness-project .container a:hover .image-wrapper, .work .css-zen-garden .container a:hover .image-wrapper, .work .goodreads .container a:hover .image-wrapper, .work .saps .container a:hover .image-wrapper, .work .high-trek .container a:hover .image-wrapper {
+      border: 7px solid #432E63; }
+
+  .info {
+    overflow: hidden; }
+    .info .about-me {
+      padding-top: 35px;
+      padding-left: 20px;
+      float: left;
+      width: 50%;
+      box-sizing: border-box; }
+      .info .about-me p {
+        width: 80%; }
+    .info .contact {
+      padding-top: 10px;
+      float: right;
+      width: 50%;
+      padding-bottom: 20px; }
+      .info .contact h1 {
+        padding-top: 40px; } }
+
+/*# sourceMappingURL=style.css.map */
