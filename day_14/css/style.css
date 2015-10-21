@@ -481,36 +481,34 @@ footer {
 
   .large-menu {
     display: inline-block;
-    background: url(../images/food1.png) 0 0 no-repeat;
-    background-size: 100%;
-    width: 75%;
-    height: 170px;
+    width: 100%;
     margin: 0 auto;
-    margin-left: 13%;
-    margin-top: -5%;
-    border: 3px solid #EEDDCC; }
+    margin-top: -5%; }
     .large-menu h1 {
       text-align: center;
-      font-size: 110px;
-      color: #EEDDCC;
+      font-size: 80px;
+      color: #420E08;
       font-family: Source Sans Pro, sans-serif;
       font-weight: 900;
-      padding-top: 2%;
-      text-shadow: 3px 3px 2px #420E08; }
+      padding-top: 70px;
+      text-shadow: 3px 3px 2px #EEDDCC; }
 
   .wrapper {
-    width: 95%;
+    width: 90%;
     overflow: hidden;
-    margin-top: 2%; }
+    margin-top: -30px;
+    padding: 0 20px;
+    box-sizing: border-box; }
     .wrapper .one {
       float: left;
-      width: 50%; }
+      width: 50%;
+      box-sizing: border-box; }
       .wrapper .one .appetizers h6 {
         display: inline-block;
         color: #420E08;
         font-family: Source Sans Pro, sans-serif;
         font-weight: 900;
-        font-size: 40px;
+        font-size: 32px;
         padding: 3%;
         text-align: center;
         margin: 0 auto;
@@ -582,7 +580,7 @@ footer {
           color: #420E08;
           font-family: Source Sans Pro, sans-serif;
           font-weight: 900;
-          font-size: 40px;
+          font-size: 32px;
           padding: 3%;
           text-align: center; }
         .wrapper .one .salads .container {
@@ -729,7 +727,7 @@ footer {
           color: #420E08;
           font-family: Source Sans Pro, sans-serif;
           font-weight: 900;
-          font-size: 40px;
+          font-size: 32px;
           padding: 3%;
           text-align: center; }
         .wrapper .one .guay-teaw-hang .container {
@@ -907,7 +905,7 @@ footer {
           color: #420E08;
           font-family: Source Sans Pro, sans-serif;
           font-weight: 900;
-          font-size: 40px;
+          font-size: 32px;
           padding: 3%;
           text-align: center; }
         .wrapper .one .noodle-soup .container {
@@ -1395,7 +1393,7 @@ footer {
           color: #420E08;
           font-family: Source Sans Pro, sans-serif;
           font-weight: 900;
-          font-size: 40px;
+          font-size: 32px;
           padding: 3%;
           text-align: center; }
         .wrapper .one .stir-fried-noodles .container {
@@ -1760,7 +1758,7 @@ footer {
           color: #420E08;
           font-family: Source Sans Pro, sans-serif;
           font-weight: 900;
-          font-size: 40px;
+          font-size: 32px;
           padding: 3%;
           text-align: center; }
         .wrapper .one .dessert .container {
@@ -1909,7 +1907,7 @@ footer {
         color: #420E08;
         font-family: Source Sans Pro, sans-serif;
         font-weight: 900;
-        font-size: 40px;
+        font-size: 32px;
         padding: 3%;
         text-align: center; }
       .wrapper .two .special-noodles-and-rice .container {
@@ -3108,7 +3106,7 @@ footer {
         color: #420E08;
         font-family: Source Sans Pro, sans-serif;
         font-weight: 900;
-        font-size: 40px;
+        font-size: 32px;
         padding: 3%;
         text-align: center; }
       .wrapper .two .drinks .container {
